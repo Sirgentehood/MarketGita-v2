@@ -19,7 +19,7 @@ st.set_page_config(
 
 OUTPUT_DIR = Path("outputs")
 ARCHIVE_DIRNAME = "interesting20_archive"
-BUILD_ID = "v41-stage-transition-guard"
+BUILD_ID = "v52-six-market-boxes-rank-interesting"
 FEEDBACK_EMAIL = "investingwithstrategy@gmail.com"
 
 STAGE_ANALYSIS_IMAGE_B64 = "UklGRipXAABXRUJQVlA4IB5XAABQvwKdASpABoQDPslkrVGnpSSioZG48PAZCWlu///oX/5TaSWmd/AvvaYXJdoG/dmGUdbPfpn/Sf3/9n/ft82/f/9n/kfI/zW/DP37/K/9H/GfL/+c5P+0j/o/13qZ/MPv3+7/vn5HfQL+379f1z74vUF/M/7D/tvYFfsefqBPr/50X2PnF9t/YG/oP919S//H4snrvsG/1z/aekJqaewgw8gqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcMvkFTm128pgObhl8gqcy7PFXxDAIsuilhrUjUXZQhj73D/c4ovDBcjFLuNLtxc5tjiBJJ7Yy8HOy/PJMdBU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL43kuxGhBbKWGT8ek/nbDLUr+RIliebd7bTx5Kel3UggytG87pIMICdcY253ZkCOILuYVMMZo8r4n2j6H+ypza7eUwHNwy+QVObXbymA5uGXyCpza7eUwHNwy+QVObXbymA5uGXyBP0ki0uJFl4toMM4b5zUi/0agSxmasR9FkNMBzcMvkFTm128pgObhl8gqc2u3lMBzcMvkFTm128pgObhl8gof0HM6nF3MwYCWDV5m8dkOJxgNEsGrzN8e7Ci6KfKE7s6oKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5ta1YOZYYuRqWvunGA0SwatO3jxfdOMGAk9WidZNquGmA5uGXyCpza7eUwHNwy+QVObXbymA5uGXyCpza7eUwHNtWPDKsBTG4T0qYKQXGGzSFw0KrpG2u8SpWjkHSra3DS/Ci9r9Afqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcMvkFTmVR4ollst/s2P1fpsX3NUbAJJZv1MkbL7hQ7//JcvBF0KqtoaiC9/0hROZVBoQVCgPU4ECzc8c4TN466VPfwxsOtQzufhdELzy1YYXXowXu4tPNqI4s2870l0CZ7g5uGXyCpza7eUwHNwy+QVObXbymA5uGXyCpza7eT2Baecd8PRJngAnZcEAnwEKburzD2LIB3QmD02f27/3JSbfvqT8n9MVg/KV9BrhOy/4Xxw5nblEOnTXVGBHEoHrGrzc35fFOv27y3Pz00wOpHqKLHuHnbAx6Vz3DkfW1clC4tVw0wHNwy+QVObXbymA5uGXyCpza7eUwHNwipg4AxDRHZ1u8lhzydISEQXfER2EUgSsic5Jq4oJ0c0lL+47ErC1E33xbb2Y8JguxewevFTaJg7fn9H49CGKQzqjsDRG5sVnogJxrNT8rpJ52NVf4gP+t30da31eNbIn07sBBvkUCiC8NVw0wHNwy+QVObXbymA5uGXyCpza7eUwHNwy9ugmOMQ0EPytOTjb1favDV6SlpUmDJ0KGpwyqmYGBJLNlouhFvUp77n6UhQ9LbHFUutXZzzJejDOG0sMIiryAT8wdT845XFErmaX4WXrHLAhqNf8UctQT0rlqH8kSXZ/MEJYczSTvJWqCpza7eUwHNwy+QVObXbymA5uGXyCpza7eUvxsC7UfKLabn8PRXjemNhBxb0sxpklfUYnK2wTROLA2ueYBGRVCnlkUy8N/thNBNl6hcO1tb/QidT6C8JgOeK5q9RI9isjmZDKqKJOTJFmjolbl/LyVBU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvEwdjMmof1o4MGwKQKEEjfH5HBLKwz8eOwDGOcZ9b7qjIUjOdkqCpza7eZr4NinKjd8y6C7nofNxcadLHB3BHHiCYi5QAxobUmczwy+QVObXbymA5uGXyCpza7eUwHNwy+QVJeIT7l9mBTr7tTNyTZ0Cem/SBqHoeSKJ3A0O+oXm0j2QVObXbymA5trReWSshbn2wx7BQTkiB9y4lhlqKbTatMP+aBzFWNZpj+EoKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt4nVb08NXIJg3YCICTTzUypUJcUccQxG1RYNsWq4aYDm4ZfG9Ltlr7lTE+WsT3A0g9TL1eLEywStANYGppCvPg3wWB283za7eUwHNwy+QVObXbymA5uGXyCpza7eUrin0V7LeOD1kNp2HYRtIdbfgRxCpJs86Ad2guVxarhpgObhjUXwGx94/dQGZPOaUHiKAK3HAX5etSnbuWuMVr+JOQkHynhO6CpL0KyDm128pgObhl8gqc2u3lMBzcMZwa5ZRywxlqBAzwhYwITxcbYH/3wq3sAMpGZaB9Vw0wHNwy+QVP9wpfdvFK5fhWR2XIjDjPkbISmSaShWR3Io6byCtjAMTQQ10BfyebIzQmjM3eiGF4J8HkT9twvq0QXV7lXfvo/xSPOI1n14n/g8zwy+QVObXbymA5uGNRVpssmk9T50X44MKtlW9r3onUDXY/Dmrgn5eb4oonOp2FeT7+0eaxfJFg5Reaq3/F0NIZKBVvYOlHAD2BJAnIBEA6+Obhl8gqc2u3lMBzdaBT4f325VxhSaYd5eFRllPtdlA03SzmKepbQGAQ1gUF0GsLtOrLAQHANKVXvoo+4MHFNBV9fQIJY8FhXb/OJ1eJUCf38B7/Mi/3J6u0Q7eUwHNwy+QVObXbylZQqrwquLy4nYTX7cmMx1bEWegyUD8NQ7J2ZhGoGj3ZgnNtmkCZUf6V6akxMFMiH5IEYfSC89ogf5DXMZOvBxhWa7oqwlbMFd3IVcuE0mr6lk5d9HT4JsLcqLJSoz5IyLca7H8lul77i1XDTAc3DL5BU5ta7Arhe5qID6asi5UOCWAAIx4L3AVQeNrGvWDNZNv3sPA5tdvKYDm4ZfIKnNrsLYrljEQmRKvASRs9WZkizOtiQ9Q0/4c37Hk9YKuhe4L/5w5Qfws6mQXRx2JVAX2PDtMggiYE04tFASbC9PCe6Q7Ej//NSGHrS17oAvOHdQwabkDeUwHNwy+QVObXbymAsIwMfy/8EhP2R7jo7kkYcbRK+ZETxcPR08zwy+QVObXbymA5uGXyCpza7nk39HCEo7rJ6swf46tNkuSIBKHcAfzPRSn+3qYXZn3mpbPgw8rWQVObXbymA5uGXyCpNxLdziV72GMA7K4obRSCZm8NgVg4yYhhsplwbXbymA5uGXyCpza7eUwHNwy+QVOCeRq8UaDYB+0A27vcuTpJwNK7gLuMkeZxofYxTiqoV4AHvaVBU5tdvKYDm4ZfIKFXCxqh74Epe4tYZ7M7ixZ09XTQGrxENgDBi+QVObXbymA5uGXyCpza7eUwHNwgxMacYTp8yMDRGMWEwUgzoxcraoSXz2eb9XDTAc3DL5BU5tdvKV2TV6XJhLoJvUhK1AZ/DjDrZFFOtg/bBIb/Qipza7eUwHNwy+QVObXbymA5uGW/4DnrynceiEt+vBA8I/KZkEIRRw/eBji3VGHht9gkBRYv/7KjND+HljEK+0Ng5h8Np0QjlTDTAc3DL5BU5tam9I0Lpx/GZqJ83FAZESC4t2YQqCu5bYWMSIMuLVcNMBzcMvkFTm128pgObhlvQAqedvTfEF5nYBjylcbYV4nIzogbyCfqeGfIdh4oogjO4rP95YI4VzBqPgqTtXkBFfOah3qR+p7lltFLpLzUOynyBbS2QwxswHZKOGU56HIZSAenAy1B0P0snKvHPiQo2SoKnNrt5TAc0aKyroXIMkUs9ykJdrgzURJOs3JpYVbfl9aNq8ee0iKR7NkqCpza7eUwHNwy+QVObXbyl+Nfi56DJj2wB8CAehkU0K9WmpdZdtZ2lCC1jeDoc8ZmJi9X5YgycyEAY+pdwJhiGRiPh0gDipIxm7aTFGSpzew1PHw9Lvj6zkUkEB1m/dNomCZNwy+QVObXbyl93zoAoDq7F1DqcUIJAmFnWl7q1ZzXt0XwzQC9JbRf/ggiXyCpza7eUwHNwy+QVObXbxLeCDaMtH8Nugd+mnu2/B+GaMktTKM33/jo3CHDawyEGjNnBECX6J21ZUrOhlcPvi0YUzBF47JsfeOSfDDubhl8gqc2cC/jbIFYb4BOnqKGetUvZTx0iRVHVlKeSQyppza7eUwHNwy+QVObXbymA4lhhaVh8rjF3uEsxHuUMem4Bw3xcSD5QJIwOc8WvL29FBu90gOaL6w3FIjkY8tl+Ga6SWyD/tD18SKsjoZD8XDzkNYOlK0GEmmwxXZWjgBqSGAOrUV9eRYTbNA+ns6N0q7/w52rhNtA5a/LTj2UHRgXWbIIEpaAo8nUPA4XVydDfJuE63PDL5BU5tdhLYUm0S34RBpaitGngTE9SOgxE8wNgK50vrrmeGXyCpza7eUwHNwy+QVOECHg3jgJZ6+G4z7DjpoqArd9oGOLOcBeJzwRGPklv9q4q2nC9TP5+vayAWiqRMWekzcDhJCP5t23yY+7eExifPXAj2b/2d8NG2F5N683j5HXC12ttT8qfyTXt9j58Gos3syUQJ2mhBezsuUKQ5CioOkmgHYk3pgpCOk6UEUwHNwy+QYsf0KV9/XKQB/Yoz2zl9+v80aMzSlS8bSEqoBdRhHfIKnNrt5TAc3DL5BU5tdhMyF7CVHa1wOlIZ7FDITzIqeZQUZCIN4/twlNrugOwCw8Gk/cI8S2oKnNrt5TAc3CHQBTyUQZseCmbjqrbXhkGzEaXFPq5OQXvd/+SunSeDrMoHQvKYDm4ZfIKnNrt5TAc21Y41h3hCsjyV67u7sO6UKComnRL3DyWYobccKFjTAc3DL5BU5tdvKYDm4ZfIKnNrXMdhhQokQhGq9kuqH0oUldCr77MR9HTu/pRFWX+CMfIKnNrt5TAXQhfIKnNnQkmnVgSagtuo68INXq/wUENK2BXcQ6odK4tVw0wHNwy+QVObXbymA5uGXyCpwdTUwz3LNBT4HganAZLGBS1u8kUmvmv70AQVObXbymA4rbhQueCkxBVe4ZfIKkjyT0onMu4dmqvUkAxVmHPQkdG2Sm89XorN+uiRBU5tdvKYDm4ZfIKnNrt5TAc3DL5AifLCW3N01VSUOQIV3eeKnWjEWNQhpgObhl8gpigF0nyazza7eVC7B7HqYY3UQF6T4I7XYjC5mKGbWOx7WhQxLrt5TAc3DL5BU5tdvKYDm4ZfIKnNrtwdYLxyeycePYY8aZU3vOL5TAc3DL5BRD/KZjOzeyVBU5ls/aqd2JMJ3BI4Q6k2T6FYkyfP2UByMvmOJQ1XDTAc3DL5BU5tdvKYDm4ZfIKnNrsGoSIy8GpDtnjgxZDUFIZr80UocQPVVYEvevTKY3OMN0lphGk5p609qQP3//3fBI/ULgyP5bIZxY74/o9s6xsgoQBLzcMvjdQ5QLQqyqNTrtHhR0xmrB8/AhWf843vt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5St/+6VOPm4Yj8VsunmOsJZzUqCL8YDpTSi5LXpmN62BMFPBogd/jqPPAcecfJeboZ/cuBNqroYu+y/XP54rQLRFKti9BbfxXDvh58N4BtoSdrgBxsdiZktIL/SciW4t48oLw3r6nMHa8e04j9v/+3/flUEcaxu6YDm4ZfIKnNrt5TAc3DL5BU5tdvKYDijjwNYcPC3SCPA5gRdMfSCp4doWC6uhR6kg+PUiSM3bjv67h9SC1VvoP5jQxr5wlUj9JmDIr0FkS+NnzbP0kyge9u/3cBLqhViqUgn9WVsLT/4XSL0jCtL2Uw7zHENMjFGZHm3RdKhznvSh1j+53efl/ikHt14kS+QVObXbymA5uGXyCpza7eUwHNwy+N2ayaZMHSSBMEfPczoH7ySUz/kwZ4g3i52u4MuDzK4uawDWuqDKquZmMKugnn06Jb4QyoZW/nJrs7xvUpRtmvtmj4Sopf+tF6CBbtQR16hz8Tjr91DFZOl8ML2iWaLI0Yef2ozHeAukowbr0KTA5vSVBU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5s0wOHjrVSVm6rk6pCftJfCgIfFpDt5TAc3DGPqO0qWPg5RDheI3pBWcOAYc8Vb6ZKG9L6RdGPqVHnzNWsq9Jbj0XQpKUdN9O2q4aYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm/NSryMrruXyCpza1uQdi93VJuuEc1tZ9B+BvCg/vc3Z0NMdzfY2AC+UiXyCpza7eUwHNwy+QVObXbymA5uGXyCpza7eUwHFA3V4RNxVIF44dKPACDM3yHSnUsfldwqrN/Nwy+QVMPQgfQ1wdif8za7eUwHNwy+QVObXbymA5uGXyCpza7eUwHNwy+QUPB1KUfg0Sv+Tjg0BuwBZ6rhpXLYJ4cAxLBq8zfnhevunGDAQhMhEpIi4WRL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDiZJnF/I12AisZsri1VNyNSiN04wkKP6ZE2A9/qoye9eZvGp2YGSoKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc20EZ2cUX/q5AZf+MlctPD1fgC7zyAl6kHs1AyQP/RP9r5OLJNCVfZ9SlvgctEGlaT82u3lMBUU1Xh5g7VGSXGhZIhpcM+kAFkya/Zu25uDuThYYd0gVhjRlhq18gqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcMuLHCpOWeKwKK+8YHt3cD7C7ngXYtI0iszGbBlhhXOSMisyI+f+S98lP8nMPA+uQuE1kipza7eUrBaDsyVYAAB5rkAJqFSl5/p6ZgAveMLdH1oSuQe3UVjfDB0kuKfd5jrPhA1pczdwPEdsVIl8gqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcekHYNCP1n64e3DL5BU5mYSEhuBkRGya+Q+b/vBifjRiCCI5qaPc62H+tzm128pgObhl8gqc2u3lMBzcMvkFTm128pgObhl8gqc2u3lMBzcMvkFTm/Xtq4aYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKnNrt5TAc3DL5BU5tdvKYDm4ZfIKkgAP76ixAAAAbsBo0ekN+d+UAqXZbx3Wo2dt3xZFuFzje3KuePyJT45bFBhzvUUI4VYGhazSe26Ck5mLdStiMfm5AifRpnbsnqKz6C5cIE/0/BT0IIrnOxEU2hBZWTuyoCPu2a2hH/Zq+6Ae9DxouGXQgeYbJBOe54UJe0xzfzwcxpiKJEwj0wEXs0Pz7D4ebpx5zfB3DZS6CYWXgu03eqWEhy/oQkWjd0kX2zA33htgtf+6HATgmGxnvEerX8anh2sRzDM3EFZ38+CUnackwhLB/1BiuGBSxEYXdT0MF/e9rZtrF3gdxTlerlWp7mvLG9chXsbjarzU/e0puIValzA5O6dhx+b1UKNEtIHLqkj37GIvP7TRZlPmU3vu7D7LAvzOaJd1mGUbJfmZdYvCU6yXRUftsE5OymWugipaeYAAAF67mMJdyQ28iPasmxcWEmdX676mOBlHynRI64nkPf5FY+JLfu9X621jS0j7fzM4kLm51rTq8FfWmq89TxjfzlpPEp38HJS7/y+S+P+iDVkNc+zrwTym5QBYoK0UehF7LQbgagTNKPqekIpKJTVVMIVvo+g2ex1vXXihXr/6BQB0R4BvIQu5z0+Z0jK0O8v8kPkz9CuA0U9dzc9Aduu2WYANphOspSq1VGH98krurq481o/1XaXj7SHCiZMtl4fxF1bgjxuVLOlOX7dMhlp9KdyBtPb859YVFQHyfJaISshe7KGg3TwhyKXjfjMpzjq8DqLoA0DHT0Wl87EeE7/f8ZxcsTKSLea5s5NnSLHavzy7DhokHaXOJgGNPn8kpqXtbBP2sRyOI1rbw97fswL3H9TKJas1H5xSw3JrkvalN8INup5LvDH5PxPhAzzsYbpaL2YVsujbBBxbQF1nnOpAF/JEiQKQ2GFOdALSt09G9TrWRaq1HpsiQGo+o1aDvru2lihscsAAAA7g0UMHpabQNISJocKociV9A66RyMr4UiShIUVqkhFfcIjiSEIPo1V8/KDp9ccaCbFdN9y6J8uw7FmK/JV7+1uT0QPZP6WzP9qxrGMTqdkNyDEGwGo2pLTEFQmQc64d/jkZmzI4AAABoWWYRvuV0InvZgCGsw8f10LsYTvKa9JFsi1+8V1Lws5vxpWEUXFJpSC7MevTzQwZ6JEgy4do3fwU5S756jOHtorsyfsxOAw1eTliyQAAH0FPtCX7SOazKMALIXWmoZGFGJx1cXQ16rVkhPFx/uWLOPiuosQZ1CAaBRe07RFyDxcAAAB1iDw9aUWnb0PlyL1ouTnxxgbDwXs5tGepm2VImusYB46HRd1iLql8Zd3i8Y1HRoqVHuj27ZKt/03vudDecHEgEd8aSLiPlxvX43ylZP2JccNwRR0g9tejDb9lUXO8SRa+5qyj5cvEmQD4/7l9JumMHmRyG1KZBml/Mnq+iVV5WBeEBozi5DPlv6lFvgAAP2SQwNi9xDdwdg1DQOoareXfLRvFXgjkiwzXiDDt9GfGzZSuJlfsDeASw/K455iU/TDys1NPMRbOkZZhLUTk9dbuU33OlUJeepUrMFjcZ6Z3PtJHACK1/L9JgamkreDRS85kDT+iVn2oeOrWIavpU5rhsIFuyL4KP7Wz4nzVuDkMDjYI7O1/mcCzHh84ah1Nn9VmsZNEVD+f1nOe58HisOmGB3Ry0SwCuwtjJWFQZNkLFEYbzjtyBb/HVWWpOelkYaFN9kHtexUkqWkWw/NxYuCqN6QmIDcqi4osmEOmvzZluwNpjVv1LAT4YQKHSbJ1hCRofTgN3Yjx5BWNg0Q98VHg7fjcWPKSv0kyPOhLf1OLHCtxuS2A43q28sr6UzpE3vE23DqRvIsG97qmDaocDXGcwJVnAHnwILjeSgEt0ePvL9qUd42Atg8nGtA8nvzEkSpW21px7VYAd6seUxbuvTyzAAsYiWvsdC2D0dGnof3E4RE9hrw+t1OCJhXEv3Yo3cY40+KDot5muWt21So3ekaY0Evc8CJWUaEWkV3HACui88YI/b2N572qRmrjAOQvM1Xr5mmo2HqH2LZpVD+J1i3PSD/Jzs+2tRxPge+yYcjcpZOUUMGB8oVghD2dZWc6+CfSnSoVlWaHKVJMhWAAAZoeHxfxTAzEIwja15DY3wFuiZNHov+4l2tIRgCFjBfJsyKsHWRawNJ+OkowD8xKMQlwsM+tEyJFLDN0M3oiUi6dl+Am6MReD+nCsH93KyJpRZdNS3YiAQqVzvsRTVY5cyTSizbeVPLCpJNGtI7oOzyasWQxIT5syEIesOM3jbn/Bn84xyBsGLJ2V8VO7HcuAliOtzyhPbin+LEhCvRzSnXXVlMWfxNwzrOdj2eirPVe/7lTEHDPOwhLBvPh6pOsZkJLLRGZyN5xklUO5DZsc8MVuBgNGsIOVSfxzQ+DH2Lhgu4lckmqjIYcrbx9FfCHONRwMulHEurdHUZf721JepJl5evH1IErCqJeZxxtBPw/wyOkDBc4NsqP/KX5J0zPCLC3lIMdkU+7+Pmbniv6n56GEPxRsoAVbRg/mCml2fKDNoAbLMR+08wuLPLa4BscHEK9xN57/7xXmTD9RdF1RtMqFlVUInZo74BYdS0ehB33pDkZHmVt9Aw4zEbj7gzNvZNHWeou3A29+HACbRWrG64+iaNC3u5Y1pwOZ1wigN6HQutfyUYX8RmIOfH3OZcdl5+ZUZZqlJbl2yGpD8EAABDXAJ96BOKk7BOZca+FYzBP66gPsx7lcP3ttw9lGQaTJBos9KFJLyAkbiT181maeayMgyK8jLcYS1BHxZ9lkAqK/5a1i0BPt3LmVXeJP9FmqPSE+hri/w9WH7Aa+9MagpYHy2W5MF3i7yacKEMU/VYqLaQ7ooz2Ajd0KtPrM4xtukJw/BBlQCHIeEX+vgOKmjRix0qKIup3dF8wcDmtQELjoWa7oyHQ6WQ5vzySX5x2MO+qprYh5OdhzLUatj2hBRJX7Er84HK1lX6N/p+ErTi6sQbBA5P83VsHDUBR20l6AS0kWlycahuOCDExdcGUlHhpomcNpjalyx6oHObRv3LzfNLPPSeKPzhIkokZNBEzbTZLiT0YDNdRnDzKezTAVtRzgaAtd2R/g1NUMwSHrgbyQhib799v+sgkclPn/BHBsR4T52gE29/HGGYKwBLmUAZKR6tjLZQmFij3+SFO+rVumxI35NRsGpEXcZm7+IMF4YIfk95CdnUC6ImIBYyFR18bVxEYFqx7VSVVq5UJ2HarR3QZTCBwQCcNNRyBIZ15ny71mYJ/DBxGSbdWUtOIIPaBIvHX8EvUSNT9LHk9FNKejR/4xj9dGzfnY2YA50FDBW8lvRkv5sDdc2AARGEnIbiKN61v3zJOZfHrGBXI8MsGuXLG7anyhKUWZjUzMAILP4iGxo5ABnWKZCYxTqAS+LvQIPOABIgZDTIAvJrIK8XeHR2CHAO3vBbkOT3SqMCM2EapUXSUitmm4fWy7sH+migErR7ElDVjSw31TfmllOikv3jSCWLeddo0y4roV1l73K2OG1UmhksBcM7VvtTw1gfX2mSIGjsYGYbRDS9hDSn53QipGkW+E9CX4C5KoQLumDfS40V0B9XCr5r2a69IPLQCkhCcPCHGRRj6rjG3LF3JVDf+SegfOJ2nl/pSDQrSKO+UbT4D248in66QAypcbErXHumSqcsJXGs9eFiQbplF7p/+sWZiJd++56Mb6hsRoo4sFuhNWnaTAwswco6VNNZ8p+Xq6bq5r6XdRNzzkgxtoBrSHNeE1h5PaCm8RtdjbRxBJrOTTDYCl96EhOCOPEsUt+rFMSGwBooLZEWZ+i6nGKgbpRZJ+VyfQvwS+F2WU9rv68Hl++9ZvMtKLaR4IHVd8ixFyOSEGI+CkbG1RO0WI7Fz3JdI56YblPFT/Ybfm0ZUKi3gI4GAAhR/207/iWmKzWCFv7iHnH7fX9J7/NJro7LzqW9TrP6qvbyVdKtar4ooW6GGkQiSTIjrHfBQ4UqWOGP4RyWL3+49gGHqwUqbeDRNu/gvpYVqYzuztR+gXIRBm12tGV7FS1lOUAZe/2Yfco0P4ytdiL/6NcKCwzCrbS/bF9dQW4z+DTXuGCh/WcqU5g49yQ7gs+TROEuCAupw9yGR4c6LbHZn6QBE75xgLxYlgMUkQe+AnytWGU19ZU/lgM2gFtnGOIALogFmUor3nh8u83IIIuoC7mqR/B788YZy0nI7BdDQtv/MT8o0vOBVJdtrWd1okAvk8zCtVm2rpTwv+bbq0+Zt/usAAjAESCB1y/LlOHKW+yTuXBRAiR8hlce/qAKJlF1SrpuUeGd4z4byI7DGwGOm57blgFZCjEUTSDgjDA5vTKNMzoro3zI1XfQwAyNWqXeDNQrZErnANd8sTXgx+B1kBpor/UXDaOOwTMpPE7iBfbElPJLQpa2RCeSTVzVHngyuT0mwp7FqBMFGHMFwkc5OZ4FEnjnWLuhwUI5l785QyFJrs3/XcQFzer0SGOTe38pYQD7Bchr1zceN2fGhyv8ni3n0plPjGiP3a8bzwcifB6eRi9NQ5Y0ymxXsCI6uIAB+69+RppWgwQ3ninEp9evPoO0lN2bt8AQrsqX2bon23pRnaKSBBDAmIX+5Xfjpw1jrWsUG/6kolHq7VEYwYvM7j+kW6Jd3MdZFCsBUk6r2hLu14kvAmhUy/kcCE39zlpIZUeI5GneR59BP2ES6m2b6UsVnZ8VBa29IaBuvr+jQYEFpZ6l+yhgimXMGHFm+Idnfgcy4Ud0qJ1o9TtkjkzHHHeQ4BkzNg9vgxk52iE2pRV5KCrLXAoEll8ifQ/5IX6e3fh4Z+2NyBsgJonkUealM5v0XltBk2Thy3Wa4BGWrI0loOFwW18z3bFev8mJSLPkWcABNthe0pLFAyA5PCwafrOlOVvj8L2rDQkKMvUC9UGvQ7v/m69mX+DyeFLOLpD8czqDlsEfmaikAWcyHbNDgqjL+rFQmH9kBWQaLPAl8mSSjIqcKriPsc4A0KpBWzx0FOvZ+BL/djTUN6CrXvFYpKMCEUlgzNRxSa+9Z+7XbrnEw01sD9nys8NmZoTQDbUQ0ZLakvnn6P+qdecLNJsyN/s7JxcRKMXdyWTYxCq334rUYeMRZPWcdAep8mpbAwquGedWnSGxi31Ou3oyybpzkoFykRjEdh7FAAU5rNwfvYAmx+Qn2alUjE5k/khLZOR7TlVQdYSQ1LAKhPLBd0CbWdCVOZ2ZrOk12KgsUp8EEeQLDDFP+8X5V3lYQUkojnACD2fOgg2Z/WqfZ4FR7L9I7Zib8jyAW7k2tQcbck6HN3Uwe8KcwnCqh3xYPkO8FPB0GgR4tEZGUxfh2ZQsldem3DNFt8P593xezBp4OfKvwz1jcPgJrIIexFEosOxljuZjZQw9X2eAd9EuN4uBLGqmPEQ90Z9CvG2TtyPShRPf3BDbaL79ku5d6o/tnLh1nJGIMvW8mTkvaeUinsVpe9P0agDa/7l/72hmtjf2bMGjajejka5dJHIG5F8Iv0vxxzGkdX6lhz2Aj+xTM9bz5ERsJNuKaG77ZxxTifF4nDWkRiwxm1ZisRaleBSgb9OKQ43oPCtj2ZcmIW2euOpA3a0ygWRsuU2keUiQqc1fW4SpUjxlhYbb+ARkCPaoNopOhnneyB6HxM5qJDQvBSxH4UWwBAk1Pxu9syFB91bk7Xi7MsMGccV+x6oDt6495YdCd2G2MO7lkrEs3WNMoPCWDbH2FKM+EROSotB9bkkREt45C/A6Kyvf1gnbcKwULB6d9syR/DnYRF2g41jWhlWVkjDijMm40NwVPEPcwodIC69QLy2Vi37UcQDnDvP935hpl6Z7yTMGVjA/ctkVv2K82Wcsfm4ZgwQX4iuv+wjmN9iidjhoquke3c2D+U2DsyK0n/x+3cdwVsmJvd+X8UjfZBSWt93wtw2kU7fgrVrN7t5vy6pbOihEV7SXTrbpjooGFxqxb74Gw5U9CiQrWFoTYrXZfRsSUm5ZBm+HRqj14VPjCoNCGOrUnDyTeXQ7+//CxjUJfVMBC0Ov9M61pVH9MmHTTDLiqyjxpspBlVJvOiyznWdeJOU520eETN0N1seU+HNA6x4qAoPCTTceazNGBI4LtvgVa7d5VcNErc9ZUbwph0WbbBRrqNnuLSPPQmtPb5PF75Sjf38OoFWLEDiYEfU4N0GO5ueI2JPtW9jsxNbFr55Idjm2LAgu5gEJfEC5Wr3/suDjgzOgM2SFbV4cWvBOrRpWX2JW7XblKM15Qz4IUtD4gt4EiItaTgyf1rzdEMcXq3AewVRnVj82HpWk69X3XbuyeyI2tjWPZvA0F2n14qNmsRx1FP3RinvZtiaLnwNHTLNKpH9RafocnU4OBuATe9asF5XJJcNjNJNAxv3gAxLQsWY8yNOAxg4yX4Ahtsq45EK9fziJVC+kFE700Ry0pMTVZiyl7BT3hcZTYmgLmpob+bApbTtcIWMYGl8AjB/5w6WaVzbvi5mmnr/c6AtghTyKycym/M9nmeUiOB2NNv4KdIV131yzE5Ag9ZzzuRAWHQQSq7xUc56JHm7mu71zcEyTEz4b38uTRr3H0n8R4nBUuogtOKIxQvtVEgBzwa2mJkZL4PauXcHMANpdHFMHP4nRnEIg6FGiLaQgmKYvGGPAdMP/bCdrXAVmvgAW5Fab33IfZxCQSJ18DmKHZNtZtY51PqV+9mIQh5DNJH0On6bNLWeS+lhB0SKpgtWBqzWsaPxmMDcBZ7vb3OSP64h5rKcW6EZmlxJuxW8WxbLbfVDPoU3wpjTO3W+6VjGlumBJ0bDZSKcGLpQDV7hwJPisuDcrPAL8slDdSvv8FpC94hrm7+Xrdz1UAAKUvwFFKSjfjrSzTvswX/lrSV6kTPRTjKDMqvHWzOuEgSKRTCUMDpoFE5zOLD1uKM45HOJLDhOK4iOaLoe5bl3jkbid/911DlYnCrF+p4CouhR6dhq1rxjoE5ienhlkSLAhmtMsVC0BO3RrqbCxo1RELp08JCwlA2QkGs/T7uD3A4ZX3hI3viyoRylUg8O8Z3qg/8Z+UsNJz/mRa1TA21u6T6kXKffPyOczAeWLoXIeNuNte6i8b8mEguo3N1DPs9n/mJZIxdASsCk+6JK6FHUtesvFxkvbIXwE7R5gJJ9dXSH6WmAsVr2b56b6YOaYAbnCC/nL/JFAA9PFB8TS+GsMRHcdNDnldSnOcJ13Mh5lQ3HpGh0WpE86fkdS5tdbEGp5YQDJ1bNnkRN7hoRwVIqjpazcNvDBDVAbhwb/3L/H45P6jtHDZ3ULHkcHzhjqbKgl7XGZobJ6ckBLzr8/83hmfTRDBLnf8J/3HKDW6bI56Dq1cAXpNCahiz3TZ1JoEJhxmzcrtqtpnBVqdNkhjZe8t9i+rqZFvHebMbBY7fGCo/j4DrLkdJpVb+V6rJh58UbdjVBhlz6BnTWM8PH2pJmFseNawsaC3TfUh7Wq3d5nVcOFKju/pt+r2m1agj+Kx6kZHETjiCgFebjuPLcJe0X1uoYYCjGimFq0TWj1ZM7V3wrWJc9VJ5u/AXGmteLevcvf7BIKRb3aSHk2IajusDHrTFN4Fi+Q9JblBI/dikmi1WrwPUzKjnTT2L5LUNDH8E2uCRBYF9qF9ItjCU/mFGcRL/sSpUPTcqRJwHIgL30XM3Sqvz+sRnHrOASgeiM2dZ17AMtFmhhBgjQHbvW9ZGQ/DBY2GP2C/7rpd3kN3+v2W5nbgHdrJIv9Qj64MI/9L6F6egoAX1rDfJedR7laHKNkZO3eMIn8X76BqD66pN/Ekz6cBOOUTVh5jlE/+0t609XN9tcFjTpCuR40UxJ+3D6MNvJS7qSW0v98qUHkVx+2WTg5CAvAxhc6m2WXh+2EDa/fRqXgQMgO7m++LeHAWpkCPLiSS7I4o8owgLick4nNiNzgdKJ99kBfsyLjwP9vg3amzcqs3Ziw6ldxIxBWOCFhzAPwFUD03WBuqrxlGQMdWvj5UTSSHAsmk7cpSoNgBY76qb/uRD89mGkgYxLMAEQACRz7bkNbdLdao64PPY46hp1wq729hiE4s2ug34YcoEnyViB7ls9VEYztoSIjbiK/rtD/T3liZcJ7+EimGMZr3SQuL956pHPhE5OKbBy5GU2hCU8zf3RfJiYNNQFYjNbXu9QXf7CkfbwGGHZsjnpzox5dXYu4F9stC8D39cZDJ5O5i/s5Tw6/74w11OdBVSHJy5ozNCBK0fj4lmPHAlOQVFQb/7JKMTrhE3pGwM2Hb5i71p9bMFDA8tAFcd8xakkSep2rxBNv5tM/o2/a4BxYWiKepALbnYYjPOB7rohJx84q6T1HSb4g9LJzVmlk2EZcVwtuy6/zdUwNswOErgvWbDh8HQkwnixfIufMnApQ7RwGN8OUO/63RKPygV9BxsWfuOCm1SueyyjT8hJbR/h9FdaXJP1DOgVezg1dz1eIYi76J/Ze4ORWKC8ZbftUv0R6w6i5P8CIaZ3tJ7H5etaMFbYftWls06CsxXa/di+wsAB4pOzRCAcQs5h9wOULMClzJE7ANYlnn+QXhgFiOMmC9aHJZ9CVJl+bOeL+q/SCVWP1ckUJt103/MlFlq3irXWUtPcOB1/y0GyQAAycnsAI9AF+vpdV05CUBFA1d8sY3wkKGStYT+QuezI2mHQup3SKjmIWVuyyAfLrhmmYYTLOD4v1B9qiySKmXhfoApy+q1kCroFhtgHRaMGd7Wt57HLLjslvCu9dsEnA2r1RC2hwPXxsN28GDLOV983tqxv6UzoccqofEktKqJC3poGifDg5P7nOPEmaMgCNIiuCjfCsc7dNl1k9LkFQJUzPzcrZw4MTleG7v/VckXZVaUNapkLqRABMcNCWCJhjytB1k/E6mYBum01cIuzJumsH1r8pavmH6DQk0EKt4KaS/SrAzUzYNNbYBjggA1i/XyTs2AyOssFPnQRHLotRQxYGT51GfWN9qRwcxJJSPHb0BGilwJlF+anovbLqHYuxUCn5rPB9it3P/m4m0B9sNt7e4euXtZTFrNUFTSuTSQjgCHz6X/PoHbhx6VHXsoC/+c6MIvV9au/cicFVlfFGeymcpoe0qxSx6qurEej8tQKKzK2ujS7jVu+v21zXc9IqbrZUWMVoDnoMiLJHEAAJrMCeyrnfGTnqq7Bn4CuXf4jtAeQZRxGT/yCP1e1oydvo58j2la8pJhbCHztQ4/JniOrkmybWhnt4Bu7vSHMRyNZ9rmKl9pSnHYDZm7v6Cg5yapMT/if5h+jjT33dYRcEf/XMgz6VU9t4ig5/EaViRQezJGt35hOP6IO6BmZDrlc6Y78410579GhffGLHvNa2gHSm1iZZQNiuK6kzcUWmqKda/Aun7t9BRGclbbvY9fgw49D1v2AMioxM0UBLcLId0Kk/01+IAtvGhdFuHRhab0yTYCgk27tD/Hn99DJY9/vrSi18RCdMatCBViR3AVASIYqSxxtcNmDt4swplFuKNGHxxA3sRdp8y/Jhik2ZjDcNhV1SQkp2IOXkTQ4RG798myy4Zz0EuNS/QTGgwtF141Y7+8DzK8Mzf3/g1Vh2RqhacOL7tEH+wJgb5PBXua+IJp5AzGvgkF6PL6utBwfZLptfYgtSksGmA6ZMJ0TtPF3Q0hrdyJTRQ+tL45faaxBpALUUsg2nnAkv7rbZZd3o7N8a5N31tUuWBVYlmFBDqYxaw2WfR66qkrkJzIssI965dsr8nGu0DyXJhIO0cvJ0lzBRUYIlwcItG7foevu5K9MlUtZtMQdfxAhQ4P4NNdAXkOp9HPRkjDpD6XL0/AgSL0bzFoNYDrKKgLQUDaMWesUelb8GcDYyM2ardpydal1W127CWHA11B8WzrjRQIVbuUG1hgfAVUhEiPYJY4F1FhhjptJr/vLYAaXcAaSpbFEQqGQlSWdhW9Z0c/hT+22Xn3oW1Y/l7zxpuUBehRmHryXCfXU0vCLJ0LOajdtU/1t2/KlXFGzdSfUSdJYGYv5wT/Lc1A6AkLfhR1oAXAVrc2Rd7HuhVmipFyIcii7qsGvKZzXSuNtvjAHeBi45jOaWS2EADf1JtGhMsrSUt6PvMZQKf61ynQax0Q5nF1cImyMyMX0kRAKsNXTajTeS8DK56fQ+v4pQomjaO0NfdcnzJxAJQRCUS9pH1R44vROqhR89KE7wXPmgMVgwo2oPXeK/0rssxElA2exObPKH4urlprhJ5CrcdRp61rxpvvSKcYMWhWBoE4eAZq6cHJjZH1nAfkxPn+qyTJM0vU6FZrbvvrgB5OrtVVCrO2idL2LI+JY49eEj/0uIG8i5hpaKfPIttRgnRyv0LcoX6pG6Kz77CU9tl0EUgXCgZ0uGxE9SWJ2NgidlTA8WQc5WrOTYFlnPK83fFN9pqGOPvUUwQBYuo/YUkg4vshZag1akDzkPNDDQQr5aVrTtke39OJqGC7Qa7PV+m+8UikWHF6QtXTxuz66V7os9DmFIAf98BGZMdUbppgSMMNaABHmsv8IP1j/rzcCQGdpOYQ/lBwQUmD2JghwEEniD9d4JjljlOR4Vb47mFJEsxocGQc0DTuWE6feLNYN1QAE08eHChSggMTVt5iZM6RGljt85s/GFIieCXDWPYoJqXO+xiJL7EZjnURmKccBXx//LzE9mHjULYQv9g13vcx/oUnzj6BYd+3dpDptzScYFsIoHgR4vRtyetjTTJvKGJL2QX7iB9O1I1qcvaJoD7tnQA1Eb9JEYPz9YQaBPO8S+StJwLDuHAZHk0wB2irtdUPl9zLuBNjz3ja7ASYBlDHNpK4zU0/P1Rv9lNK/pg47G8/A/Be9qtbEQ32lOKEZtZqN6P0vLKsPdbs5HICxWhG2RC4nq7Zem9SINOjv3ToiMAT5RCjhxHHatGodFcga0z9ZNX1ILzbVABSLG+OUKsXl10dXctQgSdIWZ3cGEDXSJ8jfuPFCDOI3ADlB+EabX1qBvWi5AKNQLHLffak9tJ7vVzvo5OnkucPyMLZbL/OGetZo6aphahKyqASHbpkHFn1bc5s9gxR5E8XabFwHr9V8d8tCzdZEF2JNoqTwSJVvlPopZ3kd51FJxI6jd3zSPxooovkYnahFyCH54isK+ZfBwJMxlcJeleAETZ0d++MCyj9GYYevgEs99kIaaPVNhYZYG3nsav9eBBKK4Aok0xD9UzBjOsxXm38Br83w7v6FTpgRxgUYNpimEMXXZ/UFsn0MUvUyAnG8/hJjQKM4h7gZG9obWcRFZJWKdgQW9a8AVz8C16PNjF9Tv+1qa454kNh1bSNGKPs7jHEtPn4njvonIkgfC+wgCoHGU73DvS8Marfyj4KwJhTc4CJLuLGsq+X9+XC5SciTmIIFGW96qJC9hJefLuOAKfHfgzmt/fvqnsd+prfbh1kOCuvLbJzUqUUGjOwrmXk5QtbnhNx0/dSropcDAYKJVG1t4gWPztdlh0Cw43wnREgNTW8k1KPgYQdkB02RwFajodFuevcJKQCrenm0XbWR8vrEeVZwY4N37B2V1aCi44bHICAbMpEswmPm0P1LsdcccKkrwszcF6oqcv5tMSn3Z4OPs462n2ppyey1FsNKAkM6p/NQUDwNldK4z2NlJtampZnbuNLbAazcjqtPgce/1BX4SE1d6vgV9NFjUAm5LAdxTbNV2JJ4r5IBjJLifZK+dDSE1kBrF+7+XA5h8dtyty5F5CYYGARiscl0O/20UeCuF36Q4AygGiC1bETXrzQ0KBRkvjhYvvurVdWhFXfD8LBT6oXMQMuLdVJdFimzg9w6WBMVhYjeQ9EfOsS80B0E8XpCWtZVKKsKWtPtnS6c/LO8l+nUY+IH0c0jXQX3Pb0TDrC2kL8IbGyftqaGpBErKTWmEnr+dz/2jxwIboIavCJVvU0/dmAPEny5OS+MBcp5SUgmnTJDH5iuUUN9v/TlWjJg7tqejx/RSc4gnbjxNia44u+2UgTcY3vzhiOIlj+tYMEMTAduUqtS3x5mFEx+2uCpjv0+dK1G8igvMst3QJ/wQVaYod+duIplsDQrfT/8LVpeMmdryHo/rUORKqN27DC7Z39ooRGsG0abirXsEg/JI5Jz4sXp6bpE5DYczxT5+i3FDbCkRFRjBvurGjwW25EElgKBIwNbgy+wMSbadui7Qqy1eQQP1hkYt/MMKkWUKQ7A1qAaBJFwxYAr+h833DrAZikWKZ/zz8FaFZU4d9z6Jf1x7kSxMtUptwiQhnqRV5OUQUDaPCE4rFxz5w/4/ZYhmXkjYlYVF4VUzAnlPwcJ4DiuiXqxpcwybG7WvPHWqh6PajMGorSRrrlwU+YDe4Mz0gq2OODH0recpB5Z0AYeqILWP7EadB9FR736z01eTavmyFRLkTpf6Yp13W7l3q7kKidWcRHTOvzoyIDHLPsct/DvX+ohe5XVGw7o0KEDHlkl1nRfE7XqmwBMyV+spUVdBxKEYvpRmKJFKhWSuoDWdCicBCHNFCTJTUm0KTsTb79skEvIv/xlKrSKa6KOfJB1eppZM9E3vLZT0nysgPZZM/4xsqIfqBuKVksCzVZxPa92SoZ3CC2fSYnf5WScDsutzhhNFGxlIx5fKL9ll/hg0rbS2ahZSUnT1TZ1wfcjqWu0eSjsMfTrVkfDNCvzfiSLq8WwAm9ZWQNEo1Sd9r9U17H+Br1cxxMTA7j3kd5bM6mHeJuWFuWk4SWS0Z4KlkpzrzK7HKZK1pyoYYu8Gx/raqwLBwgq1uktIzxUC8MPYxdmajWAZt/hRtzeDzFgb4o//zGdlQ+rhLZz3jfQfqsvaa86MFziz9cujxKddZAtyOtqh+V4PV4qQ3x1xA7GtQtcULjB91Khnc61E5swkMWouMfU2iccprTYQzBP2fZpirpeCo1UjZu3igRv3db0W6DzjcZ7y+JqRWDGEEKg/zbYL46jxusOt9uAW0edCqK9fiFfFMK2PzMRUldhyC6ZvLeG9pjiJALzE/buHfJp8Y7S4KQ9IIn1FSc8a+pVd3BliKTY1m/fR86kALzQzRkyvmXwqVHUwqlaPvNIwPjl+oBjEeO+4OGv7DTxzvwmdgbpKoY2mK6aAS2ebpi7q9+/mtz3nCo6SrL/kMHapCGFnkPRmXY8rk7awiHDOUwuyeFrH59BeRrmsEfKsh8QWK+fZErgnGT6zh2oLaej8ZBkDOcdEWXcxSvpl6y1XaZ0H0g7PNzN2psB1VNxJxapnDmUb3IkCkLwOYgjMzeKHBJvi4EPJ/havcthGuJxO3kxM1GC4qTjgB1hNx/mlUSRSHZE2V3LqGgFCx2b3qu2iK8rnQD+qKJJuYjkG4qbqDQF73WiYx+qcX/o8zHuxEZ06bFo++pIIbT/ogth34FRzfs7TL4XHOQckMU5/G/N0IC1cyv2kCwFKXR9vgESOmsY78MmXz0I6yLsnMy8uUcW/Cbdnt/jMww0RYsuC3Zdi9TzHzslmVioItEDt8MltHLxRU/qAHqa1oq98Xpt4mJxulRdVfS7ZDq5RMUKZ4O1zogsz2VfKg9WIlLEM+mDhtT9U2GORjHO+DhVQg8S+vvtiBs8y4EwuYBRvHf64ghjUROoUIEEUQvgkXoThq2AM8jq/H0q+asCsIJajv/JB+zMOXiv7LCHYP8bnjugjYEh2lwoS1Rb8MM/6xawx4kAnjUAUpztmVRJjbnJYoLcDtLrTHVco/KWod/ISMzoFgnLG9NgpjOdWsGuELjFZ65AnYowkojzQjKFNJ2huGrJnPGtTTc9iW9y0zh2Zu/Tyr7wUXO1wbRdp+881qMksqBLTISlwK7IG4u8froPV4Kmjsrqk8lU9Rhkg7rOcRN6OtE+akBWdZbqGLckAZgMpXK+mowIp9NU0xeSLw40eDgw9PC6wfEwMXxHSsNdWWpNUcpnB+Y4BbkDdHYUFhKO+hf+MVvSku4NH31EVPL4CRNCslU36oD62thuoG7De0S2Cl/TLDtU2jnvClAOi2Kk4FkUpIVj4Icsd0MoYaAmhJZogkVoEqpxb3XKvzVcp4r4Xn19TjLRiZkaZyG7VSOAJFWDKOY/TQdEY6Zc3nlGverEdt2ndHy5KJ89fW4A9sgZvAUXyrnpoYTnlRu3SbAwuvXRykrRowIAgRd+fTbJhp+jKaOh4/Uh/hlpsfhhaZ79ek4KVGpQJGkMrQjJfo1/0c2XNiSjla8MOf5byPlp+Rz2M/JMBklMlelQHYGG1w1b4cJiFaxvhWuKd4pm5gF2ZILBjelvOyUSIlHNFDMWtrCLP41J/yLDE93DOUYU1SfZdgKDEwE6RShtKukxh/sQAHAUMQPR07JtvgCoAZLnz8ajBxbQyuGGjNRYa5IpRaxgf8Y/YrK0uuz19Zq91UFny0A7+Uc160/MhMIycJcOWZCzX/EyhGUHAU6tDz2F12ga6lbw1DSR0zE+RTf4DSYkoJ3NM6slxsFtl3gDuvQLpU5z0LR+3ElRLa2cFg89gmWZkN1mqbzsU6hhbcHBJ9w4HlUIPw8Zxi4HTT7SxoxBw/g0CiMSezB614HujONVU2PYV+a5GDr07lJFPlbsJqf9doyrMs5JA7mqn5OQdff2Rz3Ly6eLHwx4AV9lqdEfW9qT7yB+nhkHUfbX6mS16EKlRfa8Ujkumb3k2WkJloEaMEsmyDIb5pQl0AmJHwPADvDcOKHpYC9/rZyORbLYv8YohkdGayWUsXOfeQHqBgv1doMrZzodJhmmPIHCLngXvMR3Sxd8XH1VRjujDX2Z9s7dbLBwCfNq2KJq9ikQ/1GskxnXcppEqlcOp6ykw3gNli6M1JGgaOYRbnAg2JGVqnMYjlKZS1CpRiAI6LbZtPeUypm3mVhnZvUXvhoL5M9LiiXpJTk5AEznhqhYt+r58YlVdM4YrgjrNTobEx7fTqk8WVJOojolFWx8Ipa/vsBxCZaDPVWT3hBLlqruKaIfKZ2i1IDGbZv5tZqsx2suOkKExkcyXnZNw+D7cyq9vUeckGgAjgkEhWZijSTJ5wuPAAPbv/mMj3ThSVNyvBnBVYed36PbpQ0SBZEy4vA8Lkldqj9wvMGL9vP/ZylKux00oNTd257qmeDBxqM1ArOIHw4suD+AYWYbJZJfl5o6SpXEygEzJD87oAbMvXh8vL3HB/57n/2y2Atc1d4UAhWXaJTePTBOUxxzBmxm+JnDHBmhvX9wzNaZeWUGtkqMAThSagX1Iu1x83AUZfwFycmQqlFqTv8Ua28Y8SSbFrmbDaiKACXXGAHHI7r1N4eFye4ndMMLs7rnO5xhDU4jsL5AYh9cKnoA/iX2sSVtq/lUslooklS5XnLMAoiZZxRFnZ7WlxK0R2w1RQzCuVc1LSHVIog5OO8rSreTATeMSWmABAJzyt+rZbGuhZuWBcvKxJ1j39I2mTk1euTvmifvLX3UdNFSAf5oUuvKPRTzN5oZkVNwaiUHn5XBgeBTcZROdoZ7hTQR/c+H+PJlDIEIRl8AG6f9UtHdc8YwXKNQ2aHvR8UxwcBkmlzbMFl4ZrmlbI8/9KkQaO303doqkkAv+SgJk4+zJwVpaCzIcIAZEJdTYvY7GaArG0VoJwH5/ZlN5dUkfr4n2jc94oKEjlIE+ZduiX6FjmpKsVRiq25roUM6974tDdnmXb0aFA7TRVs6vGt96WyMM6rW8/+vKntOCZeUZxvA5id/hhAEIWHmsOSJz6+pCZsiC6PpPtVs2YK6wEdfxdfESllKABM2tMS3E9KxAYzVTGnMXyzFmCza5Fi6FN88DNtTABUn6SeA8mh6PSA235vARQZs+d4R4E0PseQhvRAA7Mr+qkMFj59kOu5OwahWq8yYWhkKdXiDR3KnKnZREPo+lz9A14ohuVvNqqNALAku035+QC+PH969QEJff0nw6nLJ3FcKVsmv29u0hEr5bir7176A/NAFrziPsQzDzUjjNkU56BqGLeigBcC4XYLm+OzO7PUGIMvI6arPJYc/R8cb37cNrA7ZQoX9yPcq52VzzYm1v6psT3m4HsObS7G9cUafREGMhZksiM2ynALj77wlscVRnaIMU8NvEGAv7s7m261KIbGu1X6MLQoAHlHrInRIshrioHws/vkzywBIhApgQMKZMqt4EtFsj19xa5tzOoYaV83HKXJgU8k1zl1Lr6c8z7s8P3HV7rfMaLeekcDcJhbgeYNLqjnWOGQXbfCU4djeIAumsktvmNBApuv4iFXPAQBTol2HJp1TL5z0/u5+vXILIyKiA0KR6ncJ3MYkF25DC3xERsLMc7uD9+Vlcy0xPdMWgiumXmuuGE5JRQLkvoFhKTa0mXkfMF/gLXCXtvDIBwMHpxiTtscxIQuyIYAGQCITpAWIWarrvPp43mXm08xi9e3PIiUYMkwHNOKQ+Dm+aD2am7LrGImpywDqJ7dXS3ssAw4qw/RTHrjO8jiFMXEB5dqMwgLGrkX2ampP8Z/N7yzre3W3sW19N7JtRr/W7JdQQPHcJ6h5Udx/dBvS1tgvxy30G79oMHQS07/6OoqSwbDUVgtC3Q3NvX5i/2jiPdWz8Ibb4w9IWKGqtgh4NkTPUlgaJW5oo4aQZxm/842XMHLGZU7ouUGPqW0AZu7ZfYMFypwlgwMJy39MxXVaW2CWfypA94zrrspz8a9y97p8jah1hGs2A6TLsc7o1aDHKTZcv0N1p8RTuQgv80J43HtaS5ISFFn6eWNhgElkaAxyzpL+XXcPyrP2Vp2Q7KXS3f535Tnmtug79WaM4bAuTIXUpI+Kd52wTZcKzDaku0Gg16mWPIkUWdPeCpQre/ztGqSJWUif6qIdgMDKpOgDwL8Y7uHyINiRk8Mqei/wAY3w4PPoDzelSCbZh4VHwkR2O4fGpB0v6VPLTOh1qtqD1B8z9oU6Dg9P9DRBQG+lzzHRRMVm3qgWxBTne86iU228HwXECS49fV26ValMY5zIDd5tcS8xc1id01GHoIHqqhORtMoZUgSEeu60/R8hSua3QKYPT/E3TDmoRZPSkqBbICAgG3FCmGQa2Wv2SA0aVBrP5wAz8sV83wk/F0G88sOAMoE9/aoLsFYN9h2KA4SzxAGddkBBh3SByvrifNdjX2HTH9Ibg1hxGU4bfwCRzq+jUNZTLv8OuFC3ADS0aL8XQ54vupG88ZNjE41G6Ry8VRB3SpU6L3Ks0HjmIKmeibWcA/uh0dKa8WhusltWt0OlL1BdVajzEEQzzqeGaBS84hnduRg+t+YYap1xg2A1GwfXDLTFcpS4l9X8RO7KH8tnktDHpCdr+bfA7Z3arkGeFZh4Sw36Gli5k1CV4i8oEPLvGcnHMQPkqckTz21EuOgmIsN4drDGGCn8O2kt4vu9WG1zW/yH1O8FRYp/aXjbSJMgRCoNyGTLTwsRGsH4e3fQHAYd383aG9UiEgxYykikKTwURYkIrySMa/0+ll8DLjNcual1jKfYsS8+7lopu4k9RpdrDAPzV/Z2PQSaZ3Ddd44C/WlrNj2voDgcktYILbu2A70EviugUDjEZQWsHbiHQmAdNP/3MM1T/tjtd3ykrsPMZhRt3BfwYPpsT7ow3A33A9sHZe2CxTDFZjHpj+2/gbMpP0h/Y4dNj/ZNj1RvRiz3hp4dZrYIUNqf0zUD6/DZ5kMIfyOBM4Sn2I5lI5Kq9hLawLJS+jiuOOU79TQz1ZAuWsYjeVo/RMco8of/dW2dQETNLNvusCoNWMRyFA57NhGMRtOFBl+gtglmCF/sKAE+9li/muBjxM8gq1l3fN5LE6NMXogPwAIdSnA8Ou98ES5pyz/Wm0wTxZdxcFfNtf9jIrmrmyTQwihKyvSrHT2Jmn7ciuNZtmTQGRacJKXwFGpF0sKbvNChiCr/lJxCTG4HpjHqa6C2NDjnn2UCCvvLiGkdv0w24StY0E1xQ+Lj/QlWRieH88iiTgc9ztn5BhA19RvvcskMiZ7vg0WL1mLDtebUiIPNU9eMOAWTCjeC2gNBThOhmrPZzttDkUX6M0ztabhc8gjTLswHSGPFKPHMLHvNih4G9wAMsZiByBuW5SMyDHrKViXI7L4q4SsmW8CE7yweuZLRPrtNmlUTP+d8UxAeCEO1nU76Fgh+ETIc3CUEv/+5KmaBYY+BAkFj//NS/xTTAGMLCF0R6xUx28WcSay7ioCduyoDfL26YemybiGhCdLl6O5/FMaAkEO3pXUHl/QBZHA+kd4Fox1G14KkFzcJlHmChwqPco+nz3AhnVZVEAj8M/2+47rYteqAfThEasyYwFWouSNZrGcXdjNlzfWt4hf9MNZp+eUCzKGiBzcXlK1ZDCDGWlCSCZqtTRCSc5SJZqGVTVEdYVk5MHberFj06QYqnyfvSrkA8KIg5YX5oUnaSriKCXCpmlDyBhBkbAc91yftXaR0o8dEb7b8THjAvY9hzHoFGPYRxkmUocJqg9swJz21h+P09OZ0Dp6e+BiI+FYfWOrenoeeNwYsKQ0T4DbsA1uudWbpq/5eQLymdiwQN+RMPubfD9G57N+blwABfRieSIbosPvBr2vXpg1vqTIJjbeoE/MtNiqgki4zCwg/9I0aHnK6qU03f4b71tf3NX9Uj2ERX3oExIPfTO9ui/hWENGJ5ik3QuvgUYuBNo9x65YRzJHYnesDTbtD5q4EN44zwQOq9WcTfEHmYLuJNzd2O8VXm+AfIPFIBNCsHUv118aURImZeqjwqeR7UfruP9QD3beWScuOxDfasnefAKyD4jEulCJl/0LmN3LS1p3FtRC7coMouljW0v49Db+sRBItl18CA86tDqUW6fspkdKplCxa8E7iA9KJtJVnLVBCORs313D/7cScBE2s2usn1wTcfVzuafSg7crGhYkV/kJifzTQ2CUpK//1RqVjT5SETI0TbOJO5wGSY8CWpzt2TtxXNT43ijWuuJx3PtqfH45tq+Oo0hEPINVj2ogsW+ANpF8kplT9OaaaPJZdg4t3Wru4iGrCuCadg2gAb5bfUN4ZGx029NFxQg7DFm2RoYuyDdqHMWmeYkvHCeKwE6kj/v6WmjON7ao7m09viaWhtQ5pWH/ZszCq8NbDnAy778K69XcpQscMKVG+5TDCPokQ4rY2zVI5Vg1OkHO1V8cEa6Ndm9WjUckGzSl2q/gSkWuBIoZ1NrWFiZIlFBmZaOdBbY/SVnd7KmjJCbAfxIa66uRKlX6wXsAFXjjjFnqyEZOrHAwjR9aNMSaWZxUteE+6O9yzTvVjyOk6HMgNwYSCa0CD7sGgY5oVnhY0kNbV/M3Nc3AH7srNqD9eu6v0TbIOByVAotWoLmFLIJ8pppvy8WoLEGhsPr4sYOVqzaMJIZY6AD1LdcrW4t+N7JYfCouFSlSspwMEnxsAeO7WX3LEWAEADaJM/J2/HruNi8Vl6OTxV4VUddQ8CAzlusZnERh4smsVg392pDMBJtPFYmYXzeBUa2ctTknd8XxDO+//yp7Pw4E8NUApKqF8c6Q0U13qnYn35ipPxQw1Cgu54sytw43ku+SQWSKC53OaN8TJXxogb8ozxRdBkJcqM/hQ6Ju2mknphXA/5bXVWQJfajzxF/4nvOhsIbDTliOV3k9s7liubsFrNTZk4kVQoptQ1R6v0k97Mjrw4gXHN3oAayEPPnLdhZtS++E+XYAp8yDi5lGzGfF3dKlzdXo9bil3io+/OydSFzAbdXYAOcufP2rIXYdaGmvEVvGgh2Esejw5QI6dLbn4/6AyD2IZn+l0UmdmuvmjqAOIDxhLlKiRCRmW6kLk6XFdHnM5gNQO9q+BydlHZkU1jUxZSCKuAAAArtXPUH+3fp4XVUTIb8RskvhN1m4ws+VeJgwi2ANA7SGKAG0l8y5tBpt8YT3DEkU2tAvJM9jPyESoD2S4bPc7mLiqPwYDtxLkwVq0MenoLBjKymoCNCXKIGXOOPlnN/M8QSDS1Bwida8Gprs7h9Cvq8fjLEdcOY18/PdlaljtMtv2Op8NcrpM6/lZgB2AIVcMEohBExXE3wIABgMXpzjv+yGTt5fSDn6QKBILhaV1aSEKkIvvVRp5JVjgbSIIi9zMfo493lU8uNdM/wfZgluCBfwGzLKI1fNScKDeZbfwQMVQdKSpaXe5bvoFkmk67UiqroO3KkaUmYj/33yTWYqogXsFAABa8v0Qtw+PFatlLAg5tebO/1xFIKTDNxPf/nnnL1sfO5PL6pTUaPXeK5mKBiEWjGemZ2JfSl/HKCT94oOio8ZzrAAAJlhNbiuZZ0eQauN67TJhIvcTT/Wck0cOSgCosaSfF31WOrHCRUCAZyBpH2zuWJ9yy82tv3IKDccHl1lBSpEFzGT9wKO+AzEQJdgF4pe39IYCXsIxCIIjeE7lkRTcbBgmO9dyCAVD/aSW4AAKSVhbZT52WcyQeLosVBQVszsTtDHRfBp8dgsOFxz94sgJqP+spa/X8OxAuRhhJEeVyPKXoWssDOO6Jq3pHbMgHwa/wugohMqjxgpgM/oqHpkPyBPnx89jSV5Zb6qpRuCL385Bx1t2a55JjhhNMwdolPsBOWsEXXRNWmRj3vhi0rgp9W09d1TyMDZvgtpQ64pwC+bhZ06u0JVqDblbzPK4+XCQm0UPi//3/e+orCNxfjCGQ7+oGrGUyRLYaPj2PvrsDcBCBYXZi9rZAQ+yo/kZu71q2cW54U81eB0LkNP4l2WC4RcFIXS+4/upDTtl1hWNgUfjiJIF4GMsTucjDKbKKqCxFk4THFgrNv5y4FHk8VRqcHpGN29WykA4WEqa0kvVVgX4mX+lqCFl8Oo6yee/98fBX0SDXDcwnHAov34Edltejor6dQAHNNSAyI4rjjkCUnpjEh7iVXgJW+reAgq2mpVdM04zWm0u8EGAyX3dwRKBof2bsjOCYXcKPlz8/YXv0S+P3y4IQ+CCyp74QlCzIeiCeQowY4I/HdmWFqq8TpP0G7+nC1NnDhM54UrGAeGf9cC98XlfmJ7Wdj8h5xj/BLYb/sQiIO8XLygAk/OsPh5oY73dGC+oeD5S+4WbTt6knaMZvtggi/Qm3sjS6N32VblmtTHo5aoZqK78pY7SJpTi9HgBAWV6PeyKuElve7M5agSE7nIjxonCb7Jsa2ZZOqMTjM699Ha7Iqc4MAx69E3onbNaEAADJvrYW5YiQ1QaW28tLGMykJzr4++r0IrvLQB9GmdXSs3XgzhV/N1Nl8kupQAp055ViKlatlpHkueocRuJyIWq2kIo2eo5lu4EaCPtfb8jpM2Q9KouEn5vBLEa8rMIri6Cq0gRngsqCxtNCIwpibaiTi9xJG0s0/Hqw4t6622U0t210XXewIYw2EfQ97r6cDRFsZPB5Y2QclvNLjfo4pLPXXwgm2xZSYYaaD5pJOSJKCSa7eKIGgnVUpaT9r4lWDJzxpzfG1Ue3c47XX5ovd8+AMoKqitDdsnaW3+X+LWhzI3oqJq/BDGFjazh5lWFeyqIw2Le7HGzqFmshqwXlNUnExm/UTN4qnlBdzfPPxfcbXVF7P9rWxYrPx3FLNKLgqW6SF/uzbFvMGnBlIJKYvWkbD2Q+eZZhOH1SioKnYpmjXVpWer227Yw3D+lPtW99Yo9d7q8YASIK/j65fy2vz3P/GTxGttfBiwgcZuMH8JMskB6XhYboW2zw2gVmhZD+qanEXPS0Ia2YKz3qt3f9T3HyBOOQmOhwzrMLGYmBUFmPMMf4C+K04+j94zsM6sI3GxuNFGqmzRDCR2cFTu4gK87boTnjlwxNu1LIWINMbTOQYYjlYVlovxUgqPFw40Ua2ONVmPNo6hsD9bAxJx9tPREJZtrBzyk/4fZmXf5pQy6TPT1g9IGdi+XnnlUD1Cu9nNeNYVLjfihKW1kXw/DVEba1OfQybf6B0tcxVS0vvq+W8G+OuTopCzJc846asPYbH4BsFhvQQeCtByGa6pmfaHFMOytDKVgjFC2D4VulvgdC710CBzCZ4Ss9bAMOmt2NfYVNkLvZIygAEGXQj/P1xvy98pYS3dMAYvp06HeQ3vXS3wH2fWYcj8gcmUOCGDlIeuIgdUUqPsN9enheGzKhzlW58tUQDtCLGa/7v2PXMurZOErA5FFAQkYkikc4CfVlInBDvV6bY+1e7vWLqy7ZL3+HBByZ5VvvhV8hHQzxrWon5eFrQQYwYApIexgKnAvZ5T2lgh7rPsKfSjrX5Dc13kbmR5jc/ppeQVCcWPIVJVUMr5zB2X2sQtyH9ywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -904,14 +904,14 @@ section.main > div {
 /* ===== v38: Scan Snapshot cards same size ===== */
 .today-summary-grid {
   display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
   gap: 0.58rem !important;
   align-items: stretch !important;
 }
 
 .today-summary-row {
-  min-height: 118px !important;
-  height: 118px !important;
+  min-height: 154px !important;
+  height: 154px !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: space-between !important;
@@ -948,7 +948,8 @@ section.main > div {
 .today-summary-value .simple-note {
   display: block !important;
   color: #46586f !important;
-  font-size: 0.82rem !important;
+  font-size: 0.76rem !important;
+  line-height: 1.22 !important;
   font-weight: 850 !important;
   margin-top: 0.18rem !important;
 }
@@ -982,7 +983,7 @@ section.main > div {
   color: #111827 !important;
 }
 
-/* Mobile: keep cards equal, but use 2x2 grid */
+/* Mobile: keep cards equal, but use 2x3 grid */
 @media (max-width: 768px) {
   .block-container,
   .main .block-container,
@@ -997,8 +998,8 @@ section.main > div {
   }
 
   .today-summary-row {
-    min-height: 108px !important;
-    height: 108px !important;
+    min-height: 146px !important;
+    height: 146px !important;
     padding: 0.72rem 0.66rem !important;
   }
 
@@ -1639,7 +1640,7 @@ def build_market_story(mode_text: str, stage2_count: int, leaders: list[str], re
     b50 = _pct_from_first_row(regime, "breadth_above_50_pct")
 
     if leader_text != "Not available":
-        story.append(f"{leader_text} are currently leading the industry structure table.")
+        story.append(f"{leader_text} are currently leading the industry rank list.")
     else:
         story.append(f"{_tone_from_mode(mode_text).capitalize()} based on the latest rule-based scan.")
 
@@ -1653,11 +1654,8 @@ def build_market_story(mode_text: str, stage2_count: int, leaders: list[str], re
     elif stage2_count > 0:
         story.append(f"Stage 2 participation stands at {stage2_count} stocks in the current universe.")
 
-    new_stage2 = int(reset_summary.get("new_stage2", 0) or 0)
     repeated = int(reset_summary.get("repeated", 0) or 0)
-    if new_stage2 > 0:
-        story.append(f"Fresh Stage 2 additions are visible today with {new_stage2} new names from the scan.")
-    elif repeated > 0:
+    if repeated > 0:
         story.append(f"Leadership is stable: {repeated} Interesting 20 names repeated from yesterday.")
     elif not industry_table.empty:
         story.append("Leadership remains selective across the top-ranked industries.")
@@ -1685,7 +1683,7 @@ def gold_highlight_story_line(text_value: str) -> str:
     if not text_value:
         return ""
 
-    leader_suffix = " are currently leading the industry structure table."
+    leader_suffix = " are currently leading the industry rank list."
     if text_value.endswith(leader_suffix):
         leaders = text_value[: -len(leader_suffix)]
         return f"<span class='gold-text'>{h(leaders)}</span><span class='black-text'>{h(leader_suffix)}</span>"
@@ -1716,46 +1714,133 @@ def stage_help_html() -> str:
 </div>
 """
 
-def build_today_summary_html(mode_text: str, stage2_count: int, leaders: list[str], reset_summary: dict, regime: pd.DataFrame | None = None, industry_table: pd.DataFrame | None = None, universe_count: int | None = None) -> str:
+def build_full_industry_rank_table(industry: pd.DataFrame, industry_changes: pd.DataFrame, combined: pd.DataFrame) -> pd.DataFrame:
+    """Full industry rank table used by the six market-summary boxes.
+
+    It uses the same rank source as the stock-card Industry Rank badge and filters
+    out very small industries so the leaders/neutral/laggards boxes are stable.
+    """
+    counts = stage_counts_by_industry(combined)
+    base = industry_changes if not industry_changes.empty else industry
+    if base.empty:
+        if counts.empty:
+            return pd.DataFrame(columns=["Industry", "rank_position", "Stage 2 Stocks", "Stage 4 Stocks", "Total Stocks"])
+        out = counts.copy()
+        out["current_rank"] = out["Stage 2 Stocks"].rank(ascending=False, method="first")
+    else:
+        base = ensure_current_rank(normalize_columns(base), "avg_combined_score").copy()
+        keep = [c for c in ["Industry", "current_rank", "avg_combined_score", "rs_rank", "rank_change"] if c in base.columns]
+        out = base[keep].drop_duplicates("Industry").merge(counts, on="Industry", how="left")
+
+    for col in ["Stage 2 Stocks", "Stage 4 Stocks", "Total Stocks"]:
+        out[col] = pd.to_numeric(out.get(col, 0), errors="coerce").fillna(0).astype(int)
+
+    out["Industry"] = out.get("Industry", pd.Series(dtype=str)).astype(str).str.strip()
+    out["current_rank"] = pd.to_numeric(out.get("current_rank"), errors="coerce")
+    out = out[(out["Total Stocks"] >= 7) & out["Industry"].ne("")].copy()
+    if out.empty:
+        return pd.DataFrame(columns=["Industry", "rank_position", "Stage 2 Stocks", "Stage 4 Stocks", "Total Stocks"])
+
+    out = out.sort_values(["current_rank", "Stage 2 Stocks", "Industry"], ascending=[True, False, True], na_position="last").reset_index(drop=True)
+    out["rank_position"] = range(1, len(out) + 1)
+    return out[["Industry", "rank_position", "Stage 2 Stocks", "Stage 4 Stocks", "Total Stocks"]].reset_index(drop=True)
+
+
+def build_industry_summary_groups(industry_rank_full: pd.DataFrame) -> dict[str, list[str]]:
+    """Return the three industry groups for the Market Story six-box view."""
+    if industry_rank_full is None or industry_rank_full.empty or "Industry" not in industry_rank_full.columns:
+        return {"leaders": [], "neutral": [], "laggards": []}
+
+    ranked = industry_rank_full.dropna(subset=["Industry"]).copy().reset_index(drop=True)
+    leaders = ranked.head(8)
+    laggards = ranked.tail(6)
+    used = set(leaders["Industry"].astype(str)) | set(laggards["Industry"].astype(str))
+    middle = ranked[~ranked["Industry"].astype(str).isin(used)].copy().reset_index(drop=True)
+    if len(middle) > 6:
+        start = max(0, (len(middle) - 6) // 2)
+        neutral = middle.iloc[start:start + 6]
+    else:
+        neutral = middle.head(6)
+
+    return {
+        "leaders": leaders["Industry"].dropna().astype(str).tolist(),
+        "neutral": neutral["Industry"].dropna().astype(str).tolist(),
+        "laggards": laggards["Industry"].dropna().astype(str).tolist(),
+    }
+
+
+def compact_industry_names(names: list[str], limit: int) -> str:
+    cleaned = []
+    for name in list(names or [])[:limit]:
+        text = str(name or "").strip()
+        text = re.sub(r"^[^A-Za-z0-9]+\s*", "", text).strip()
+        if text:
+            cleaned.append(text)
+    return ", ".join(cleaned) if cleaned else "Not available"
+
+
+def industry_group_box_value(names: list[str], expected_count: int) -> str:
+    names = list(names or [])[:expected_count]
+    count = len(names)
+    label_count = count if count else expected_count
+    industry_word = "Industry" if label_count == 1 else "Industries"
+    list_text = compact_industry_names(names, expected_count)
+    return f"<span class='gold-text'>{label_count} {industry_word}</span><span class='simple-note'>{h(list_text)}</span>"
+
+
+def breadth_analysis_value(regime: pd.DataFrame) -> str:
+    b20 = _pct_from_first_row(regime, "breadth_above_20_pct")
+    b50 = _pct_from_first_row(regime, "breadth_above_50_pct")
+    b200 = _pct_from_first_row(regime, "breadth_above_200_pct")
+    pieces = []
+    if b20 is not None:
+        pieces.append(f"20D {b20:.0f}%")
+    if b50 is not None:
+        pieces.append(f"50D {b50:.0f}%")
+    if b200 is not None:
+        pieces.append(f"200D {b200:.0f}%")
+    if not pieces:
+        return "<span class='gold-text'>Not available</span><span class='simple-note'>breadth data missing</span>"
+    return f"<span class='gold-text'>{h(' · '.join(pieces))}</span><span class='simple-note'>stocks above moving averages</span>"
+
+
+def build_today_summary_html(
+    mode_text: str,
+    stage2_count: int,
+    leaders: list[str],
+    reset_summary: dict,
+    regime: pd.DataFrame | None = None,
+    industry_table: pd.DataFrame | None = None,
+    universe_count: int | None = None,
+    industry_groups: dict[str, list[str]] | None = None,
+) -> str:
+    """Six-box public market summary.
+
+    Keeps the hero area clean: no fresh Stage 2 callout, no industry table,
+    and no long narrative text. The public dashboard gets exactly six boxes.
+    """
     regime = regime if regime is not None else pd.DataFrame()
-    industry_table = industry_table if industry_table is not None else pd.DataFrame()
+    industry_groups = industry_groups or {"leaders": [], "neutral": [], "laggards": []}
 
     simple_mood = simple_market_mood(mode_text)
     mood_display = f"<span class='gold-text'>{h(mode_text or 'Mixed')}</span> <span class='simple-note'>({h(simple_mood)})</span>"
 
-    # Keep this compact: remove repeated "Leader Industries" row because it already appears in the story.
     rows = [
         ("Market Mood", mood_display),
+        ("Breadth Analysis", breadth_analysis_value(regime)),
         ("Stage 2 Stocks", f"<span class='stage-count-inline'><span class='stage-count-number gold-text'>{int(stage2_count):,}</span><span class='stage-count-note'>out of top {int(universe_count or 1000):,}</span></span>"),
+        ("Leaders", industry_group_box_value(industry_groups.get("leaders", []), 8)),
+        ("Neutral", industry_group_box_value(industry_groups.get("neutral", []), 6)),
+        ("Laggards", industry_group_box_value(industry_groups.get("laggards", []), 6)),
     ]
-
-    repeated = int(reset_summary.get("repeated", 0) or 0)
-    new_stage2 = int(reset_summary.get("new_stage2", 0) or 0)
-    if new_stage2 > 0:
-        rows.append(("Fresh Stage 2", f"<span class='gold-text'>{new_stage2} names</span>"))
-    if repeated > 0:
-        rows.append(("Interesting 20", f"<span class='gold-text'>{repeated} repeated</span> <span class='black-text'>from yesterday</span>"))
 
     body = "".join(
         f'<div class="today-summary-row"><div class="today-summary-label">{h(label)}</div><div class="today-summary-value">{value}</div></div>'
         for label, value in rows
     )
-    story_lines = "".join(
-        f'<div class="market-story-line">{gold_highlight_story_line(line)}</div>'
-        for line in build_market_story(mode_text, stage2_count, leaders, reset_summary, regime, industry_table)
-    )
     return f"""
 <div class="today-summary-card">
   <div class="today-summary-title">Today's Market Story</div>
-  <div class="market-story-box">{story_lines}</div>
-  <div class="today-summary-title today-summary-title-small">
-    <span>Scan Snapshot</span>
-    <span class="stage-help-button" title="What do stages mean?">?</span>
-  </div>
-  <details>
-    <summary style="cursor:pointer;color:#1d5fd1;font-weight:950;font-size:0.86rem;margin:0.15rem 0 0.45rem 0;">What do Stage 1 / 2 / 3 / 4 mean?</summary>
-    {stage_help_html()}
-  </details>
   <div class="today-summary-grid">{body}</div>
 </div>
 """
@@ -1789,7 +1874,7 @@ def build_industry_rank_context(industry: pd.DataFrame, industry_changes: pd.Dat
     """Return (all_industry_position_map, top_support_position_map, weak_bottom_position_map).
 
     The visible badge now says only "Industry Rank: X".
-    Styling still quietly highlights top-6 industries and bottom-8 industries.
+    Styling still quietly highlights top-8 industries and bottom-6 industries.
     Industries with fewer than 10 stocks are excluded from ranking context.
     """
     counts = stage_counts_by_industry(combined)
@@ -1817,10 +1902,10 @@ def build_industry_rank_context(industry: pd.DataFrame, industry_changes: pd.Dat
     out["rank_position"] = range(1, len(out) + 1)
 
     all_map = {industry_key(r["Industry"]): int(r["rank_position"]) for _, r in out.iterrows()}
-    top = out.head(6).copy()
+    top = out.head(8).copy()
     support_map = {industry_key(r["Industry"]): int(r["rank_position"]) for _, r in top.iterrows()}
 
-    bottom = out.tail(8).copy().sort_values(["current_rank", "Stage 2 Stocks", "Industry"], ascending=[False, True, True], na_position="last").reset_index(drop=True)
+    bottom = out.tail(6).copy().sort_values(["current_rank", "Stage 2 Stocks", "Industry"], ascending=[False, True, True], na_position="last").reset_index(drop=True)
     weak_map = {industry_key(r["Industry"]): i for i, (_, r) in enumerate(bottom.iterrows(), start=1)}
     return all_map, support_map, weak_map
 
@@ -1856,20 +1941,22 @@ def interesting_priority(row: pd.Series) -> float:
 
 
 def build_interesting20(combined: pd.DataFrame) -> pd.DataFrame:
+    """Interesting 20 = top 20 stocks by stock rank.
+
+    The engine can still calculate internal priorities, but the public list is now
+    simple and predictable: rank 1 to rank 20 from vcp_combined_ranked.csv.
+    """
     if combined.empty:
         return pd.DataFrame()
     df = ensure_current_rank(combined).copy()
     df = numeric(df, ["current_rank", "final_combined_score", "combined_score", "daily_breakout_distance_pct", "weekly_breakout_distance_pct"])
-    pool = df[df["current_rank"].le(30)].copy()
-    if pool.empty:
-        pool = df.sort_values("current_rank", ascending=True, na_position="last").head(30).copy()
-    pool["interesting_priority"] = pool.apply(interesting_priority, axis=1)
-    sort_cols = ["interesting_priority", "current_rank"]
-    ascending = [False, True]
-    if "final_combined_score" in pool.columns:
+    sort_cols = ["current_rank"]
+    ascending = [True]
+    if "final_combined_score" in df.columns:
         sort_cols.append("final_combined_score")
         ascending.append(False)
-    return pool.sort_values(sort_cols, ascending=ascending, na_position="last").head(20).reset_index(drop=True)
+    return df.sort_values(sort_cols, ascending=ascending, na_position="last").head(20).reset_index(drop=True)
+
 
 
 def archive_date_from_path(path: Path):
@@ -2154,6 +2241,89 @@ def build_new_stage2(combined: pd.DataFrame, changes: pd.DataFrame, history: pd.
     return out
 
 
+def is_failed_stage2_value(value) -> bool:
+    """True for both old and new engine labels: Stage 2 Failed / Failed Stage 2."""
+    try:
+        if pd.isna(value):
+            return False
+    except Exception:
+        pass
+    text = str(value or "").strip().lower()
+    if text in {"failed stage 2", "stage 2 failed"}:
+        return True
+    return "failed" in text and "stage 2" in text
+
+
+def failed_stage2_mask(df: pd.DataFrame) -> pd.Series:
+    """Find Failed Stage 2 rows across public and historical stage columns."""
+    if df is None or df.empty:
+        return pd.Series(dtype=bool)
+    mask = pd.Series(False, index=df.index)
+    for col in ["public_stage_label", "stage", "stage_variant", "stage_raw"]:
+        if col in df.columns:
+            mask = mask | df[col].apply(is_failed_stage2_value)
+    return mask
+
+
+def build_failed_stage2_last7(combined: pd.DataFrame, history: pd.DataFrame, latest_date: str, days: int = 7, limit: int = 20) -> pd.DataFrame:
+    """Stocks marked Failed Stage 2 at least once in the last 7 calendar days.
+
+    The section is public-facing and clean: it shows the stock card with the public
+    label "Failed Stage 2". Detection uses stage_action_history.csv when available,
+    and falls back to the current combined output when history is absent.
+    """
+    base = ensure_current_rank(combined).copy() if combined is not None and not combined.empty else pd.DataFrame()
+    rows = pd.DataFrame()
+
+    if history is not None and not history.empty and "ticker" in history.columns and "snapshot_date" in history.columns:
+        hist = normalize_columns(history).copy()
+        hist["snapshot_date"] = pd.to_datetime(hist["snapshot_date"], errors="coerce")
+        hist = hist.dropna(subset=["snapshot_date", "ticker"])
+        if not hist.empty:
+            try:
+                latest_dt = pd.to_datetime(latest_date).normalize()
+            except Exception:
+                latest_dt = hist["snapshot_date"].max().normalize()
+            window_start = latest_dt - pd.Timedelta(days=max(int(days), 1) - 1)
+            window_end = latest_dt + pd.Timedelta(days=1)
+            recent = hist[(hist["snapshot_date"] >= window_start) & (hist["snapshot_date"] < window_end)].copy()
+            failed = recent[failed_stage2_mask(recent)].copy()
+            if not failed.empty:
+                failed = failed.sort_values(["snapshot_date", "ticker"]).drop_duplicates("ticker", keep="last")
+                failed["failed_stage2_seen_date"] = failed["snapshot_date"].dt.date.astype(str)
+                if not base.empty and "ticker" in base.columns:
+                    current = base.drop_duplicates("ticker")
+                    rows = failed[["ticker", "failed_stage2_seen_date"]].merge(current, on="ticker", how="left")
+                    fallback = failed.drop_duplicates("ticker").set_index("ticker", drop=False)
+                    for col in failed.columns:
+                        if col not in rows.columns and col != "snapshot_date":
+                            rows[col] = rows["ticker"].map(fallback[col])
+                else:
+                    rows = failed.copy()
+
+    # Fallback: current snapshot has Failed Stage 2, but history is missing/stale.
+    if rows.empty and not base.empty:
+        current_failed = base[failed_stage2_mask(base)].copy()
+        if not current_failed.empty:
+            current_failed["failed_stage2_seen_date"] = latest_date if latest_date != "Not available" else "Latest scan"
+            rows = current_failed
+
+    if rows.empty:
+        return pd.DataFrame()
+
+    rows = normalize_columns(rows).copy()
+    rows["stage"] = "Failed Stage 2"
+    rows["public_stage_label"] = "Failed Stage 2"
+    rows["stage_variant"] = ""
+    if "current_rank" in rows.columns:
+        rows["current_rank"] = pd.to_numeric(rows["current_rank"], errors="coerce")
+    else:
+        rows["current_rank"] = pd.NA
+    rows["_failed_seen_sort"] = pd.to_datetime(rows.get("failed_stage2_seen_date"), errors="coerce")
+    rows = rows.sort_values(["_failed_seen_sort", "current_rank"], ascending=[False, True], na_position="last")
+    return rows.drop(columns=["_failed_seen_sort"], errors="ignore").head(limit).reset_index(drop=True)
+
+
 def sectors_improved_count(industry_changes: pd.DataFrame, industry_table: pd.DataFrame) -> int:
     df = industry_changes.copy() if not industry_changes.empty else pd.DataFrame()
     if not df.empty:
@@ -2393,6 +2563,15 @@ def stock_display_name(row: pd.Series) -> str:
     return company or ticker or "Stock"
 
 
+def stock_stage_display_label(row: pd.Series) -> str:
+    """Use the public stage label when the engine provides it; normalize failed label."""
+    label = str(row.get("public_stage_label", "") or "").strip()
+    if label:
+        return "Failed Stage 2" if is_failed_stage2_value(label) else label
+    stage = str(row.get("stage", "-") or "-").strip()
+    return "Failed Stage 2" if is_failed_stage2_value(stage) else stage
+
+
 def _volume_ratio_label(ratio: float, basis: str) -> str:
     ratio = float(ratio)
     if ratio >= 1.2:
@@ -2465,22 +2644,21 @@ def badge_html(label: str, css_class: str) -> str:
 
 
 
-def industry_rank_label(industry_raw: str) -> tuple[str, str]:
-    """Human-friendly industry-rank badge for stock cards.
+def industry_strength_label(industry_raw: str) -> tuple[str, str]:
+    """Public stock-card badge: Industry Rank only.
 
-    The badge shows the visible industry rank from the current ranked industry universe.
-    Styling still quietly highlights top-ranked and bottom-ranked industries without
-    using public wording such as "strong" or "weak".
+    No Strong/Neutral/Weak wording is shown on the card. Styling still gives a
+    subtle visual distinction for top-ranked and bottom-ranked industries.
     """
     key = industry_key(industry_raw)
     rank = INDUSTRY_POSITION_MAP.get(key)
-    if not rank:
-        return "", "rank"
-    if INDUSTRY_RANK_MAP.get(key):
-        return f"Industry Rank: {rank}", "support"
-    if WEAK_INDUSTRY_POSITION_MAP.get(key):
-        return f"Industry Rank: {rank}", "weak"
-    return f"Industry Rank: {rank}", "rank"
+    if rank:
+        if INDUSTRY_RANK_MAP.get(key):
+            return f"Industry Rank: {rank}", "support"
+        if WEAK_INDUSTRY_POSITION_MAP.get(key):
+            return f"Industry Rank: {rank}", "weak"
+        return f"Industry Rank: {rank}", "rank"
+    return "Industry Rank: -", "rank"
 
 def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Path, freshness_badges: list[tuple[str, str]] | None = None, streak: int | None = None, default_chart_mode: str = "Weekly", display_idx: int | None = None):
     ticker = str(row.get("ticker", "") or "").strip()
@@ -2494,7 +2672,8 @@ def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Pat
     liked = st.session_state.setdefault("liked_tickers", [])
     is_liked = ticker in liked
 
-    stage = str(row.get("stage", "-") or "-")
+    stage = stock_stage_display_label(row)
+    raw_stage = str(row.get("stage", stage) or stage).strip()
     stage_variant = str(row.get("stage_variant", "") or "").strip()
     stage_confidence = pd.to_numeric(row.get("stage_confidence"), errors="coerce")
 
@@ -2505,7 +2684,7 @@ def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Pat
     group_raw = str(row.get("industry_group", row.get("Industry Group", row.get("industry group", ""))) or "").strip()
 
     industry = f"{industry_icon(industry_raw)} {industry_raw}" if industry_raw and industry_raw != "-" else "-"
-    industry_rank_badge, industry_rank_style = industry_rank_label(industry_raw)
+    strength_label, strength_style = industry_strength_label(industry_raw)
     name = stock_display_name(row)
     chart_mode = st.session_state.get(mode_key, default_chart_mode)
     chart_dir = daily_dir if chart_mode == "Daily" else weekly_dir
@@ -2517,16 +2696,22 @@ def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Pat
     weekly_chart = get_chart_bytes(weekly_dir, ticker, "_weekly.png") if ticker else None
 
     badges = list(freshness_badges or [])
-    if stage == "Stage 2 Failed":
-        badges.insert(0, ("Stage 2 Failed", "weak"))
+    if is_failed_stage2_value(stage) or is_failed_stage2_value(raw_stage):
+        seen_date = str(row.get("failed_stage2_seen_date", "") or "").strip()
+        badges.insert(0, (f"Failed Stage 2 · {seen_date}" if seen_date else "Failed Stage 2", "weak"))
     elif stage == "Not Sure":
         pending_raw = str(row.get("stage_pending_raw", "") or "").strip()
         if pending_raw:
             badges.insert(0, (f"Pending {pending_raw}", "rank"))
         else:
             badges.insert(0, ("Not Sure", "rank"))
-    if industry_rank_badge:
-        badges.append((industry_rank_badge, industry_rank_style))
+    badges.append((strength_label, strength_style))
+    industry_match_key = industry_key(industry_raw)
+    industry_rank = INDUSTRY_POSITION_MAP.get(industry_match_key)
+    top_position = INDUSTRY_RANK_MAP.get(industry_match_key)
+    weak_position = WEAK_INDUSTRY_POSITION_MAP.get(industry_match_key)
+    if industry_rank:
+        badge_style = "support" if top_position else "weak" if weak_position else "rank"
     if streak and streak >= 2:
         badges.append((f"Seen in Interesting 20 for {streak} days", "repeat"))
     if is_liked:
@@ -2688,17 +2873,20 @@ if combined.empty:
     st.stop()
 
 industry_table = build_industry_table(industry, industry_changes, combined)
-interesting20 = sort_stock_cards_alpha(build_interesting20(combined))
+industry_rank_full = build_full_industry_rank_table(industry, industry_changes, combined)
+industry_groups = build_industry_summary_groups(industry_rank_full)
+interesting20 = build_interesting20(combined)
 trending20 = load_trending_stocks(combined, OUTPUT_DIR, limit=20)
 latest_date = latest_update_date(OUTPUT_DIR, history)
 previous_interesting = load_previous_interesting(OUTPUT_DIR, latest_date)
 new_stage2 = sort_stock_cards_alpha(build_new_stage2(combined, changes, history, latest_date))
+failed_stage2_last7 = build_failed_stage2_last7(combined, history, latest_date, days=7, limit=20)
 persist_interesting_snapshot(OUTPUT_DIR, interesting20, latest_date)
 last_week_interesting = load_last_week_interesting(OUTPUT_DIR, latest_date, combined)
 interesting_tickers = set(interesting20.get("ticker", pd.Series(dtype=str)).dropna().astype(str))
 previous_tickers = set(previous_interesting.get("ticker", pd.Series(dtype=str)).dropna().astype(str))
-top6_industries = top_ranked_industries(industry_table, 6)
-leaders = leader_sector_names(industry_table, 3)
+top8_industries = industry_groups.get("leaders", [])
+leaders = [f"{industry_icon(x)} {x}" for x in top8_industries[:3]]
 stage2_count = int(combined["stage"].astype(str).eq("Stage 2").sum()) if "stage" in combined.columns else 0
 mode_text = market_mode_text(regime, combined)
 daily_dir = OUTPUT_DIR / "charts" / "daily"
@@ -2779,17 +2967,9 @@ st.markdown(
 )
 
 st.markdown(
-    build_today_summary_html(mode_text, stage2_count, leaders, reset_summary, regime, industry_table, universe_count=len(combined)),
+    build_today_summary_html(mode_text, stage2_count, leaders, reset_summary, regime, industry_table, universe_count=len(combined), industry_groups=industry_groups),
     unsafe_allow_html=True,
 )
-
-st.markdown('<div class="section-title">Industry Structure Table</div>', unsafe_allow_html=True)
-st.markdown('<div class="section-note">Top industries ranked by current market structure score.</div>', unsafe_allow_html=True)
-if industry_table.empty:
-    st.info("Industry table is not available yet.")
-else:
-    display_table = industry_table.drop(columns=["Industry Raw"], errors="ignore")
-    st.dataframe(display_table, use_container_width=True, hide_index=True, height=340)
 
 st.markdown('<div class="section-title">Interesting Stock charts</div>', unsafe_allow_html=True)
 st.markdown('<div class="section-note">Switch each card between daily and weekly chart. No buy, sell, target, stop-loss, or position-sizing advice.</div>', unsafe_allow_html=True)
@@ -2797,13 +2977,14 @@ st.markdown('<div class="section-note">Switch each card between daily and weekly
 st.markdown('<div class="section-title stock-selection-title">Stock selection</div>', unsafe_allow_html=True)
 list_choice = st.radio(
     "Stock list",
-    ["Interesting 20 Stocks", "In News", "Top Movers", "New Stage 2", "Last week Interesting 20 Stock"],
+    ["Interesting 20 Stocks", "Failed Stage 2 - Last 7 Days", "In News", "Top Movers", "New Stage 2", "Last week Interesting 20 Stock"],
     horizontal=True,
     label_visibility="collapsed",
 )
 
 views = {
     "Interesting 20 Stocks": interesting20,
+    "Failed Stage 2 - Last 7 Days": failed_stage2_last7,
     "In News": trending20,
     "New Stage 2": new_stage2,
     "Last week Interesting 20 Stock": last_week_interesting,
@@ -2823,6 +3004,8 @@ if list_choice == "Top Movers":
             for i, (_, row) in enumerate(bottom_movers.head(10).iterrows(), start=1):
                 render_stock_card(row, i + 100, daily_dir, weekly_dir, [(f"Move: {format_move_pct(row.get('move_pct'))}", "drop")], default_chart_mode="Daily", display_idx=i)
 else:
+    if list_choice == "Failed Stage 2 - Last 7 Days":
+        st.markdown('<div class="section-note">Stocks that appeared as Failed Stage 2 in the last 7 days of available scan history.</div>', unsafe_allow_html=True)
     view_df = views.get(list_choice, pd.DataFrame())
     if view_df.empty:
         if list_choice == "In News":
@@ -2831,6 +3014,8 @@ else:
             st.info("Last week Interesting 20 snapshot is not available yet. It will appear after archived daily snapshots exist for at least one prior week.")
         elif list_choice == "New Stage 2":
             st.info("None — no stocks entered Stage 2 in the available last 1–3 week history.")
+        elif list_choice == "Failed Stage 2 - Last 7 Days":
+            st.info("None — no Failed Stage 2 stocks are visible in the last 7 days of scan history.")
         else:
             st.info("No stocks available for this view.")
     else:
@@ -2843,6 +3028,8 @@ else:
                 streak = streak_map.get(ticker, 1)
             elif list_choice == "New Stage 2":
                 badges.append(("Entered Stage 2 recently", "stage2"))
+            elif list_choice == "Failed Stage 2 - Last 7 Days":
+                pass
             elif list_choice == "Last week Interesting 20 Stock":
                 pass
             render_stock_card(row, i, daily_dir, weekly_dir, badges, streak, display_idx=i)
