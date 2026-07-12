@@ -2465,19 +2465,22 @@ def badge_html(label: str, css_class: str) -> str:
 
 
 
-def industry_strength_label(industry_raw: str) -> tuple[str, str]:
-    """Human-friendly industry strength bucket for stock cards.
+def industry_rank_label(industry_raw: str) -> tuple[str, str]:
+    """Human-friendly industry-rank badge for stock cards.
 
-    Strong = industry is in the top 6 ranked industries.
-    Weak = industry is in the bottom 8 ranked industries.
-    Neutral = all other industries.
+    The badge shows the visible industry rank from the current ranked industry universe.
+    Styling still quietly highlights top-ranked and bottom-ranked industries without
+    using public wording such as "strong" or "weak".
     """
     key = industry_key(industry_raw)
+    rank = INDUSTRY_POSITION_MAP.get(key)
+    if not rank:
+        return "", "rank"
     if INDUSTRY_RANK_MAP.get(key):
-        return "Industry Strength: Strong", "support"
+        return f"Industry Rank: {rank}", "support"
     if WEAK_INDUSTRY_POSITION_MAP.get(key):
-        return "Industry Strength: Weak", "weak"
-    return "Industry Strength: Neutral", "rank"
+        return f"Industry Rank: {rank}", "weak"
+    return f"Industry Rank: {rank}", "rank"
 
 def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Path, freshness_badges: list[tuple[str, str]] | None = None, streak: int | None = None, default_chart_mode: str = "Weekly", display_idx: int | None = None):
     ticker = str(row.get("ticker", "") or "").strip()
@@ -2502,7 +2505,7 @@ def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Pat
     group_raw = str(row.get("industry_group", row.get("Industry Group", row.get("industry group", ""))) or "").strip()
 
     industry = f"{industry_icon(industry_raw)} {industry_raw}" if industry_raw and industry_raw != "-" else "-"
-    strength_label, strength_style = industry_strength_label(industry_raw)
+    industry_rank_badge, industry_rank_style = industry_rank_label(industry_raw)
     name = stock_display_name(row)
     chart_mode = st.session_state.get(mode_key, default_chart_mode)
     chart_dir = daily_dir if chart_mode == "Daily" else weekly_dir
@@ -2522,13 +2525,8 @@ def render_stock_card(row: pd.Series, idx: int, daily_dir: Path, weekly_dir: Pat
             badges.insert(0, (f"Pending {pending_raw}", "rank"))
         else:
             badges.insert(0, ("Not Sure", "rank"))
-    badges.append((strength_label, strength_style))
-    industry_match_key = industry_key(industry_raw)
-    industry_rank = INDUSTRY_POSITION_MAP.get(industry_match_key)
-    top_position = INDUSTRY_RANK_MAP.get(industry_match_key)
-    weak_position = WEAK_INDUSTRY_POSITION_MAP.get(industry_match_key)
-    if industry_rank:
-        badge_style = "support" if top_position else "weak" if weak_position else "rank"
+    if industry_rank_badge:
+        badges.append((industry_rank_badge, industry_rank_style))
     if streak and streak >= 2:
         badges.append((f"Seen in Interesting 20 for {streak} days", "repeat"))
     if is_liked:
