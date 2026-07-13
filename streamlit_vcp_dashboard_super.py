@@ -1716,6 +1716,101 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# Streamlit theme alignment: light theme from .streamlit/config.toml.
+st.markdown("""
+<style>
+:root {
+  --card-border: rgba(17,24,39,0.12);
+  --muted: #4b5563;
+  --strong: #047857;
+  --developing: #b45309;
+  --weak: #b91c1c;
+  --cautious: #b45309;
+  --up: #047857;
+  --down: #b91c1c;
+  --stage1-bg: rgba(29,95,209,0.08);
+  --stage2-bg: rgba(0,143,140,0.08);
+  --stage3-bg: rgba(196,122,0,0.09);
+  --stage4-bg: rgba(112,88,201,0.09);
+  --stage1-border: rgba(29,95,209,0.22);
+  --stage2-border: rgba(0,143,140,0.22);
+  --stage3-border: rgba(196,122,0,0.24);
+  --stage4-border: rgba(112,88,201,0.24);
+}
+html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] {
+  background: #f8fbff !important;
+  color: #111827 !important;
+}
+.block-container {
+  background: #f8fbff !important;
+}
+.hero-card, .stock-card, .learn-card, .info-card {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: rgba(17,24,39,0.12) !important;
+  box-shadow: 0 14px 34px rgba(17,24,39,0.08) !important;
+}
+.kicker, .muted, .stock-subtitle, .rank-text, .small-note, .action-reason-line {
+  color: #4b5563 !important;
+}
+.big-number, .stock-title, .meta-line, .dist-label, .dist-value {
+  color: #111827 !important;
+}
+.structure-pill {
+  background: rgba(29,95,209,0.08) !important;
+  color: #1d5fd1 !important;
+  border-color: rgba(29,95,209,0.22) !important;
+}
+.action-pill {
+  border-color: rgba(17,24,39,0.12) !important;
+}
+.action-buy {background: rgba(4,120,87,0.10) !important; color: #047857 !important; border-color: rgba(4,120,87,0.28) !important;}
+.action-hold {background: rgba(29,95,209,0.10) !important; color: #1d5fd1 !important; border-color: rgba(29,95,209,0.28) !important;}
+.action-sell {background: rgba(185,28,28,0.10) !important; color: #b91c1c !important; border-color: rgba(185,28,28,0.28) !important;}
+.action-neutral {background: rgba(180,83,9,0.10) !important; color: #b45309 !important; border-color: rgba(180,83,9,0.28) !important;}
+.fo-pill {background: rgba(17,24,39,0.04) !important; color: #111827 !important; border-color: rgba(17,24,39,0.14) !important;}
+.fo-yes {background: rgba(124,58,237,0.10) !important; color: #6d28d9 !important; border-color: rgba(124,58,237,0.28) !important;}
+.status-strong {background: rgba(4,120,87,0.10) !important; color: #047857 !important; border-color: rgba(4,120,87,0.28) !important;}
+.status-developing {background: rgba(180,83,9,0.10) !important; color: #b45309 !important; border-color: rgba(180,83,9,0.28) !important;}
+.status-weak {background: rgba(185,28,28,0.10) !important; color: #b91c1c !important; border-color: rgba(185,28,28,0.28) !important;}
+.status-cautious {background: rgba(180,83,9,0.10) !important; color: #b45309 !important; border-color: rgba(180,83,9,0.28) !important;}
+.disclosure {
+  background: rgba(29,95,209,0.06) !important;
+  color: #374151 !important;
+  border-left-color: rgba(29,95,209,0.55) !important;
+}
+.dist-bar-wrap {background: rgba(17,24,39,0.08) !important;}
+/* Streamlit widget and dropdown contrast on light theme. */
+.stSelectbox label, .stMultiSelect label, .stSlider label, .stCheckbox label, .stToggle label, .stTextInput label, .stTextArea label, .stRadio label,
+[data-testid="stWidgetLabel"], [data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li, [data-testid="stMarkdownContainer"] span {
+  color: #111827 !important;
+}
+div[data-baseweb="select"], div[data-baseweb="select"] * {
+  color: #111827 !important;
+  background-color: #ffffff !important;
+}
+div[data-baseweb="popover"] * {color:#111827 !important;}
+[data-testid="stDataFrame"] {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(17,24,39,0.10) !important;
+}
+/* If mobile/private feed classes render, keep them light too. */
+.pm-shell, .pm-card, .pm-sticky, .pm-metric, .pm-chart-wrap, .pm-chart-missing {
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-color: rgba(17,24,39,0.12) !important;
+}
+.pm-title, .pm-company, .pm-rank-value, .pm-metric-value {color:#111827 !important;}
+.pm-subtitle, .pm-meta, .pm-rank-label, .pm-metric-label, .pm-note, .pm-progress, .pm-hint, .pm-chart-label, .pm-disclaimer {color:#4b5563 !important;}
+.pm-chip, .pm-sector {background: rgba(29,95,209,0.06) !important; color: #111827 !important; border-color: rgba(29,95,209,0.18) !important;}
+.pm-green {background: rgba(4,120,87,0.10) !important; color: #047857 !important; border-color: rgba(4,120,87,0.28) !important;}
+.pm-yellow {background: rgba(180,83,9,0.10) !important; color: #b45309 !important; border-color: rgba(180,83,9,0.28) !important;}
+.pm-red {background: rgba(185,28,28,0.10) !important; color: #b91c1c !important; border-color: rgba(185,28,28,0.28) !important;}
+</style>
+""", unsafe_allow_html=True)
+
 
 def _pm_rerun():
     if hasattr(st, "rerun"):
