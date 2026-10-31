@@ -1,6 +1,7 @@
 from __future__ import annotations
 import argparse
 import json
+import os
 import shutil
 import time
 from dataclasses import dataclass, asdict, field
@@ -2984,7 +2985,19 @@ def _ticker_history(history_df: pd.DataFrame, ticker: str) -> pd.DataFrame:
     return hist
 
 
-def _consecutive_raw_stage_runs(history_df: pd.DataFrame, prev_combined: Optional[pd.DataFrame], ticker: str, target_stage: str) -> int:
+def _run_date(config: Optional[dict] = None) -> pd.Timestamp:
+    """The market date this run computes, as a naive midnight timestamp.
+
+    MarketGita edit: build_outputs puts the benchmark's last bar in config["as_of"].
+    This used to read the IST wall clock, so a run after midnight (a catch-up, or a
+    missed day) stamped a session with the wrong date. Without as_of it still does.
+    """
+    if config and config.get("as_of") is not None:
+        return pd.Timestamp(config["as_of"])
+    return pd.Timestamp.now(tz="Asia/Kolkata").normalize().tz_localize(None)
+
+
+def _consecutive_raw_stage_runs(history_df: pd.DataFrame, prev_combined: Optional[pd.DataFrame], ticker: str, target_stage: str, as_of: pd.Timestamp) -> int:
     """Count prior consecutive daily runs where raw stage matched target_stage.
 
     Current day is intentionally NOT counted here. Caller should add 1 when today's raw stage matches.
@@ -3012,7 +3025,7 @@ def _consecutive_raw_stage_runs(history_df: pd.DataFrame, prev_combined: Optiona
             stg = str(r.get("stage_raw", r.get("stage", "")) or "").strip()
             if stg:
                 # Use a synthetic timestamp after history, so it contributes if history is missing/not initialized.
-                records.append((pd.Timestamp.now(tz="Asia/Kolkata").tz_localize(None).normalize() - pd.Timedelta(hours=1), stg))
+                records.append((as_of - pd.Timedelta(hours=1), stg))
 
     if not records:
         return 0
@@ -3029,7 +3042,7 @@ def _consecutive_raw_stage_runs(history_df: pd.DataFrame, prev_combined: Optiona
     return count
 
 
-def _consecutive_public_stage_runs(history_df: pd.DataFrame, prev_combined: Optional[pd.DataFrame], ticker: str, target_stage: str) -> int:
+def _consecutive_public_stage_runs(history_df: pd.DataFrame, prev_combined: Optional[pd.DataFrame], ticker: str, target_stage: str, as_of: pd.Timestamp) -> int:
     target = str(target_stage or "").strip()
     if not target:
         return 0
@@ -3046,7 +3059,7 @@ def _consecutive_public_stage_runs(history_df: pd.DataFrame, prev_combined: Opti
         prev["ticker"] = prev["ticker"].astype(str).str.upper().str.strip()
         row = prev[prev["ticker"].eq(str(ticker or "").upper().strip())]
         if not row.empty:
-            records.append((pd.Timestamp.now(tz="Asia/Kolkata").tz_localize(None).normalize() - pd.Timedelta(hours=1), str(row.iloc[-1].get("stage", "") or "").strip()))
+            records.append((as_of - pd.Timedelta(hours=1), str(row.iloc[-1].get("stage", "") or "").strip()))
     if not records:
         return 0
     df = pd.DataFrame(records, columns=["dt", "stage"])
@@ -3125,15 +3138,15 @@ def apply_stage_state_memory(
     # If stage_action_history is absent/stale, yesterday's combined file is still useful.
     prior_stage.update({k: v for k, v in _previous_stage_map_from_combined(prev_combined).items() if k not in prior_stage})
     last_stage2 = _last_stage2_date_map(history_df)
+    today = _run_date(config)
 
     if prev_combined is not None and not prev_combined.empty and "ticker" in prev_combined.columns and "stage" in prev_combined.columns:
-        yesterday = pd.Timestamp.now(tz="Asia/Kolkata").normalize().tz_localize(None) - pd.Timedelta(days=1)
+        yesterday = today - pd.Timedelta(days=1)
         for _, prev_row in prev_combined.iterrows():
             ticker = str(prev_row.get("ticker", "")).upper().strip()
             if ticker and str(prev_row.get("stage", "")) == "Stage 2" and ticker not in last_stage2:
                 last_stage2[ticker] = yesterday
 
-    today = pd.Timestamp.now(tz="Asia/Kolkata").normalize().tz_localize(None)
     failed_hold_days = int(config.get("stage2_failed_hold_days", 21) or 21)
     transition_confirm_days = int(config.get("stage_transition_confirm_days", 3) or 3)
     stage2_confirm_days = int(config.get("stage2_entry_confirm_days", transition_confirm_days) or transition_confirm_days)
@@ -3156,8 +3169,8 @@ def apply_stage_state_memory(
             except Exception:
                 days_since_s2 = None
 
-        raw_confirm_runs = _consecutive_raw_stage_runs(history_df, prev_combined, ticker, raw_stage) + (1 if raw_stage not in {"Not Sure"} else 0)
-        public_stage1_runs = _consecutive_public_stage_runs(history_df, prev_combined, ticker, "Stage 1")
+        raw_confirm_runs = _consecutive_raw_stage_runs(history_df, prev_combined, ticker, raw_stage, today) + (1 if raw_stage not in {"Not Sure"} else 0)
+        public_stage1_runs = _consecutive_public_stage_runs(history_df, prev_combined, ticker, "Stage 1", today)
         recently_stage2 = days_since_s2 is not None and days_since_s2 <= failed_hold_days
 
         # On a first ever run, do not turn clean raw Stage 2 names into Not Sure
@@ -3340,7 +3353,7 @@ def _interesting_priority(row: pd.Series) -> float:
     return round(float(priority), 4)
 
 
-def build_interesting20_snapshot(combined_df: pd.DataFrame, limit: int = 20, top_pool: int = 30) -> pd.DataFrame:
+def build_interesting20_snapshot(combined_df: pd.DataFrame, limit: int = 20, top_pool: int = 30, config: Optional[dict] = None) -> pd.DataFrame:
     """Build the public Interesting 20 list from the top-ranked dataset pool."""
     if combined_df is None or combined_df.empty:
         return pd.DataFrame()
@@ -3353,7 +3366,7 @@ def build_interesting20_snapshot(combined_df: pd.DataFrame, limit: int = 20, top
     sort_cols = ["interesting_priority", "current_rank", "final_combined_score"]
     ascending = [False, True, False]
     pool = pool.sort_values(sort_cols, ascending=ascending, na_position="last").head(limit).copy()
-    pool["snapshot_date"] = pd.Timestamp.now(tz="Asia/Kolkata").date().isoformat()
+    pool["snapshot_date"] = _run_date(config).date().isoformat()
     keep = [c for c in [
         "snapshot_date", "ticker", "Company Name", "Industry", "stage", "stage_raw", "stage_variant", "stage_confidence", "stage_reason", "stage_state_reason", "stage_failed_since", "last_stage2_date", "stage_pending_raw", "current_rank",
         "interesting_priority", "daily_setup_bucket", "weekly_setup_bucket", "combined_bucket",
@@ -3452,6 +3465,10 @@ def build_outputs(
     report, regime, price_data = build_vcp_universe_report(tickers, cfg, price_data=price_data)
     if report.empty:
         raise RuntimeError("No screener results produced.")
+    # MarketGita edit: every date below comes from the data, not the wall clock (see _run_date).
+    last_bar = pd.Timestamp(price_data[cfg["market_index"]]["Close"].dropna().index[-1])
+    cfg["as_of"] = (last_bar.tz_localize(None) if last_bar.tzinfo else last_bar).normalize()
+    print(f"Market date (last {cfg['market_index']} bar): {cfg['as_of'].date()}")
 
     final_report = report.merge(universe_df, left_on="ticker", right_on="Ticker", how="left")
     industry_df = build_industry_strength_table(final_report)
@@ -3531,10 +3548,10 @@ def build_outputs(
     else:
         chart_tickers = build_dashboard_chart_tickers(combined_df, price_moves, stock_changes, out_path)
         chart_paths = export_selected_charts(final_report, price_data, out_path, tickers_to_export=chart_tickers, skip_existing=skip_existing_charts, dpi=chart_dpi)
-    interesting_snapshot = build_interesting20_snapshot(combined_df, limit=20, top_pool=30)
+    interesting_snapshot = build_interesting20_snapshot(combined_df, limit=20, top_pool=30, config=cfg)
     interesting_paths = save_interesting20_archive(out_path, interesting_snapshot, chart_paths)
     print(f"Total engine runtime: {time.perf_counter()-overall_t0:.2f}s")
-    return {"daily": str(daily_file), "weekly": str(weekly_file), "combined": str(combined_file), "internal": str(internal_file), "industry": str(industry_file), "regime": str(regime_file), "stock_changes": str(stock_changes_file), "industry_changes": str(industry_changes_file), "top_movers": str(top_movers_file), "price_moves": str(price_moves_file), "history": str(history_file), "universe_used": str(universe_used_file), **chart_paths, **interesting_paths}
+    return {"daily": str(daily_file), "weekly": str(weekly_file), "combined": str(combined_file), "internal": str(internal_file), "industry": str(industry_file), "regime": str(regime_file), "stock_changes": str(stock_changes_file), "industry_changes": str(industry_changes_file), "top_movers": str(top_movers_file), "price_moves": str(price_moves_file), "history": str(history_file), "universe_used": str(universe_used_file), "as_of": cfg["as_of"].date().isoformat(), **chart_paths, **interesting_paths}
 
 def _perf_from_close(close: pd.Series, bars_back: int) -> float:
     s = close.dropna()
@@ -3716,7 +3733,7 @@ def build_six_month_history(price_data: Dict[str, pd.DataFrame], benchmark_df: p
 
 def update_stage_action_history(out_path: Path, current_snapshot: pd.DataFrame, price_data: Dict[str, pd.DataFrame], benchmark_df: pd.DataFrame, universe_df: pd.DataFrame, config: dict) -> Path:
     history_file = out_path / str(config.get("history_file_name", "stage_action_history.csv"))
-    today = pd.Timestamp.now("UTC").normalize().tz_localize(None)
+    today = _run_date(config)
     current_history = build_stage_action_history_snapshot(current_snapshot, today)
 
     if history_file.exists():
@@ -3739,14 +3756,17 @@ def update_stage_action_history(out_path: Path, current_snapshot: pd.DataFrame, 
 
 
 
-def write_engine_run_metadata(out_path: Path) -> None:
+def write_engine_run_metadata(out_path: Path, as_of: Optional[str] = None) -> None:
     """Persist actual engine run time for dashboard display.
 
     Dashboard should not infer freshness from current time. It should read this file.
+    MarketGita edit: also records the market date computed and the code version.
     """
     metadata = {
         "engine_ran_at_ist": pd.Timestamp.now(tz="Asia/Kolkata").isoformat(),
-        "engine_ran_at_utc": pd.Timestamp.utcnow().isoformat(),
+        "engine_ran_at_utc": pd.Timestamp.now(tz="UTC").isoformat(),
+        "as_of": as_of,
+        "code_version": os.environ.get("GITHUB_SHA", "local"),
     }
     try:
         out_path.mkdir(parents=True, exist_ok=True)
@@ -3785,7 +3805,7 @@ def main() -> None:
         skip_existing_charts=bool(args.skip_existing_charts),
         chart_dpi=int(args.chart_dpi),
     )
-    write_engine_run_metadata(Path(args.outdir))
+    write_engine_run_metadata(Path(args.outdir), as_of=outputs.pop("as_of", None))
     print("Saved files:")
     for key, value in outputs.items():
         print(f"- {key}: {value}")
